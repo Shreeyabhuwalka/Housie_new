@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Housie</string>
+    <string name="number_page">Numbers Page</string>
+    <string name="play_page">Play</string>
+</resources>
