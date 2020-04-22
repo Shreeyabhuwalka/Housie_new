@@ -17,6 +17,9 @@ public class PlayBoardActivity extends AppCompatActivity {
 
     Button btn_random;
 
+
+    //Button buttons[] = new Button[15];
+
     Button btn_random1;
     Button btn_random2;
     Button btn_random3;

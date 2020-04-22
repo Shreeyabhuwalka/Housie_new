@@ -4,31 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/images_background"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/num_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="66dp"
-        android:layout_marginLeft="66dp"
+        android:layout_width="95dp"
+        android:layout_height="83dp"
+        android:background="@drawable/image_button"
         android:text="@string/number_page"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintRight_toLeftOf="@+id/play_btn"
+        app:layout_constraintStart_toStartOf="@+id/vertical_guide2" />
 
     <Button
         android:id="@+id/play_btn"
+        android:layout_width="98dp"
+        android:layout_height="71dp"
+        android:background="@drawable/image_button"
+        android:text="@string/play_page"
+
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_guide1"
+        app:layout_constraintLeft_toRightOf="@+id/num_btn" />
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/num_btn"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_guide1"
+        app:layout_constraintStart_toStartOf="@+id/vertical_guide2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
 
-        android:layout_marginStart="289dp"
-        android:layout_marginLeft="289dp"
-        android:layout_marginEnd="288dp"
-        android:layout_marginRight="288dp"
-        android:text="@string/play_page"
-        app:layout_constraintBaseline_toBaselineOf="@+id/num_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/num_btn" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="110dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
