@@ -32,8 +32,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="226dp"
+        android:layout_height="221dp"
         app:layout_constraintBottom_toTopOf="@+id/num_btn"
         app:layout_constraintEnd_toStartOf="@+id/vertical_guide1"
         app:layout_constraintStart_toStartOf="@+id/vertical_guide2"
