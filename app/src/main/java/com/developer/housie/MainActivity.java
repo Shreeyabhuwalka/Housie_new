@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setRequestedOrientation (SCREEN_ORIENTATION_LANDSCAPE);
+//        setRequestedOrientation (SCREEN_ORIENTATION_LANDSCAPE);
 
         number_btn = (Button)findViewById(R.id.num_btn);
         play_button = (Button) findViewById(R.id.play_btn);

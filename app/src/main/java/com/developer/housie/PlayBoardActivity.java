@@ -15,9 +15,9 @@ import java.util.Random;
 
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 
-public class PlayBoardActivity extends AppCompatActivity {
+public class PlayBoardActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn_random;
+//    Button btn_random;
     Button buttons[] = new Button[27];
 
 
@@ -47,11 +47,11 @@ public class PlayBoardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_play_board);
-        setRequestedOrientation (SCREEN_ORIENTATION_LANDSCAPE);
+//        setRequestedOrientation (SCREEN_ORIENTATION_LANDSCAPE);
 
 
 
-        btn_random = (Button) findViewById(R.id.random_btn_id);
+//        btn_random = (Button) findViewById(R.id.random_btn_id);
         buttons[0] = (Button) findViewById(R.id.btn_one);
         buttons[1] = (Button) findViewById(R.id.btn_two);
         buttons[2] = (Button) findViewById(R.id.btn_three);
@@ -80,333 +80,241 @@ public class PlayBoardActivity extends AppCompatActivity {
         buttons[25] = (Button) findViewById(R.id.btn3_eight);
         buttons[26] = (Button) findViewById(R.id.btn3_nine);
 
-//        btn_random = (Button) findViewById(R.id.random_btn_id);
-//        btn_random1 = (Button) findViewById(R.id.btn_one);
-//         btn_random2 = (Button) findViewById(R.id.btn_two);
-//         btn_random3 = (Button) findViewById(R.id.btn_three);
-//         btn_random4 = (Button) findViewById(R.id.btn_four);
-//         btn_random5 = (Button) findViewById(R.id.btn_five);
-//         btn_random6 = (Button) findViewById(R.id.btn2_one);
-//         btn_random7 = (Button) findViewById(R.id.btn2_two);
-//         btn_random8 = (Button) findViewById(R.id.btn2_three);
-//         btn_random9 = (Button) findViewById(R.id.btn2_four);
-//         btn_random10 = (Button) findViewById(R.id.btn2_five);
-//        btn_random11 = (Button) findViewById(R.id.btn3_one);
-//        btn_random12 = (Button) findViewById(R.id.btn3_two);
-//        btn_random13 = (Button) findViewById(R.id.btn3_three);
-//        btn_random14 = (Button) findViewById(R.id.btn3_four);
-//        btn_random15 = (Button) findViewById(R.id.btn3_five);
+
 
         randomNumberCreation();
 
-        btn_random.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                randomNumberCreation();
+        buttons[0].setOnClickListener(this);
+        buttons[1].setOnClickListener(this);
+        buttons[2].setOnClickListener(this);
+        buttons[3].setOnClickListener(this);
+        buttons[4].setOnClickListener(this);
+        buttons[5].setOnClickListener(this);
+        buttons[6].setOnClickListener(this);
+        buttons[7].setOnClickListener(this);
+        buttons[8].setOnClickListener(this);
+        buttons[9].setOnClickListener(this);
 
-                Intent intent= new Intent(getApplicationContext(), PlayBoardActivity.class);
-                startActivity(intent);
-            }
-        });
+        buttons[10].setOnClickListener(this);
+        buttons[11].setOnClickListener(this);
+        buttons[12].setOnClickListener(this);
+        buttons[13].setOnClickListener(this);
+        buttons[14].setOnClickListener(this);
+        buttons[15].setOnClickListener(this);
+        buttons[16].setOnClickListener(this);
+        buttons[17].setOnClickListener(this);
+        buttons[18].setOnClickListener(this);
+        buttons[19].setOnClickListener(this);
 
-
-        buttons[0].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[0].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[1].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[1].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[2].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[2].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[3].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[3].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[4].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[4].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[5].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[5].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[6].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[6].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[7].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[7].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[8].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[8].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[9].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[9].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[10].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[10].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[11].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[11].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[12].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[12].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[13].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[13].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[14].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[14].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[15].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[15].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[16].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[16].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[17].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[17].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[18].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[18].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[19].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[19].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[20].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[20].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[21].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[21].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[22].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[22].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[23].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[23].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[24].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[24].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[25].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[25].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
-        buttons[26].setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                buttons[26].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-            }
-        });
+        buttons[20].setOnClickListener(this);
+        buttons[21].setOnClickListener(this);
+        buttons[22].setOnClickListener(this);
+        buttons[23].setOnClickListener(this);
+        buttons[24].setOnClickListener(this);
+        buttons[25].setOnClickListener(this);
+        buttons[26].setOnClickListener(this);
 
 
-//        btn_random1.setOnClickListener(new View.OnClickListener() {
+//        btn_random.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
+////                randomNumberCreation();
 //
-//                btn_random1.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random2.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random3.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random4.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random5.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random5.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random6.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random6.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random7.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random7.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random8.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random8.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random9.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random9.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random10.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random10.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random11.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random11.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random12.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random12.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random13.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random13.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random14.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random14.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-//            }
-//        });
-//        btn_random15.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                btn_random15.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//                Intent intent= new Intent(getApplicationContext(), PlayBoardActivity.class);
+//                startActivity(intent);
 //            }
 //        });
 
+//
+//        buttons[0].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[0].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[1].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[1].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[2].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[2].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[3].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[3].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[4].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[4].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[5].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[5].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[6].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[6].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[7].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[7].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[8].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[8].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[9].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[9].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[10].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[10].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[11].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[11].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[12].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[12].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[13].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[13].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[14].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[14].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[15].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[15].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[16].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[16].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[17].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[17].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[18].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[18].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[19].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[19].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[20].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[20].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[21].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[21].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[22].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[22].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[23].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[23].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[24].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[24].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[25].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[25].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
+//        buttons[26].setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                buttons[26].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+//            }
+//        });
 
 
 
@@ -432,29 +340,16 @@ public class PlayBoardActivity extends AppCompatActivity {
                 a[random - k] = 0;
             }
         }
-
-//        btn_random1.setText(String.valueOf(list.get(0)));
-//        btn_random2.setText(String.valueOf(list.get(1)));
-//        btn_random3.setText(String.valueOf(list.get(2)));
-//        btn_random4.setText(String.valueOf(list.get(3)));
-//        btn_random5.setText(String.valueOf(list.get(4)));
-//        btn_random6.setText(String.valueOf(list.get(5)));
-//        btn_random7.setText(String.valueOf(list.get(6)));
-//        btn_random8.setText(String.valueOf(list.get(7)));
-//        btn_random9.setText(String.valueOf(list.get(8)));
-//        btn_random10.setText(String.valueOf(list.get(9)));
-//
-//        btn_random11.setText(String.valueOf(list.get(10)));
-//        btn_random12.setText(String.valueOf(list.get(11)));
-//        btn_random13.setText(String.valueOf(list.get(12)));
-//        btn_random14.setText(String.valueOf(list.get(13)));
-//        btn_random15.setText(String.valueOf(list.get(14)));
-//        btn_random1.setText(String.valueOf(list.get(0)));
-
-
         for (int i=0; i<10; i++) {
             System.out.println(list.get(i));
 
         }
+    }
+
+    @Override
+    public void onClick(View view) {
+
+        view.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+
     }
 }

@@ -401,16 +401,18 @@
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         />
 
-    <Button
-        android:id="@+id/random_btn_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
-        android:text="Reset Random Numbers"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintStart_toStartOf="parent" />
+<!--    <Button-->
+<!--        android:id="@+id/random_btn_id"-->
+<!--        android:layout_width="170dp"-->
+<!--        android:layout_height="114dp"-->
+<!--        android:layout_marginBottom="48dp"-->
+<!--        android:background="@drawable/image_button"-->
+<!--        android:text="@string/rest"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn3_five" />-->
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

@@ -5,12 +5,15 @@
     android:id="@+id/relativeLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NumberPageActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    tools:context=".NumberPageActivity">
+
+<!--Button
+ style="@style/Base.Widget.AppCompat.Button.Borderless"-->
+
 
     <Button
         android:id="@+id/one"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -19,12 +22,11 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintRight_toLeftOf="@+id/two"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintStart_toStartOf="@+id/vertical2"
+        app:layout_constraintTop_toTopOf="@id/horizontal1" />
 
     <Button
         android:id="@+id/two"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -34,11 +36,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/one"
         app:layout_constraintRight_toLeftOf="@+id/three"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="@id/horizontal1" />
 
     <Button
         android:id="@+id/three"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -48,12 +49,11 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/two"
         app:layout_constraintRight_toLeftOf="@+id/four"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="@id/horizontal1" />
 
 
     <Button
         android:id="@+id/four"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -63,11 +63,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/three"
         app:layout_constraintRight_toLeftOf="@+id/five"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/horizontal1" />
 
     <Button
         android:id="@+id/five"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -77,11 +76,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/four"
         app:layout_constraintRight_toLeftOf="@+id/six"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/horizontal1" />
 
     <Button
         android:id="@+id/six"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -91,11 +89,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/five"
         app:layout_constraintRight_toLeftOf="@+id/seven"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/horizontal1" />
 
     <Button
         android:id="@+id/seven"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -105,11 +102,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/six"
         app:layout_constraintRight_toLeftOf="@+id/eight"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/horizontal1" />
 
     <Button
         android:id="@+id/eight"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -119,11 +115,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/seven"
         app:layout_constraintRight_toLeftOf="@+id/nine"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="@id/horizontal1" />
 
     <Button
         android:id="@+id/nine"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -133,25 +128,23 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/eight"
         app:layout_constraintRight_toLeftOf="@+id/ten"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/horizontal1" />
 
     <Button
         android:id="@+id/ten"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
         android:text="10"
-        app:layout_constraintLeft_toRightOf="@id/nine"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@id/vertical1"
+        app:layout_constraintLeft_toRightOf="@id/nine"
+        app:layout_constraintTop_toTopOf="@id/horizontal1" />
 
     <Button
         android:id="@+id/no11"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -160,12 +153,11 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintRight_toLeftOf="@+id/no12"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/vertical2"
         app:layout_constraintTop_toBottomOf="@+id/one" />
 
     <Button
         android:id="@+id/no12"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -175,11 +167,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/no11"
         app:layout_constraintRight_toLeftOf="@+id/no13"
-        app:layout_constraintTop_toBottomOf="@+id/two"/>
+        app:layout_constraintTop_toBottomOf="@+id/two" />
 
     <Button
         android:id="@+id/no13"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -189,11 +180,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/no12"
         app:layout_constraintRight_toLeftOf="@+id/no14"
-        app:layout_constraintTop_toBottomOf="@+id/three"/>
+        app:layout_constraintTop_toBottomOf="@+id/three" />
 
     <Button
         android:id="@+id/no14"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -203,11 +193,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/no13"
         app:layout_constraintRight_toLeftOf="@+id/no15"
-        app:layout_constraintTop_toBottomOf="@+id/four"/>
+        app:layout_constraintTop_toBottomOf="@+id/four" />
 
     <Button
         android:id="@+id/no15"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -217,11 +206,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/no14"
         app:layout_constraintRight_toLeftOf="@+id/no16"
-        app:layout_constraintTop_toBottomOf="@+id/five"/>
+        app:layout_constraintTop_toBottomOf="@+id/five" />
 
     <Button
         android:id="@+id/no16"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -231,11 +219,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/no15"
         app:layout_constraintRight_toLeftOf="@+id/no17"
-        app:layout_constraintTop_toBottomOf="@+id/six"/>
+        app:layout_constraintTop_toBottomOf="@+id/six" />
 
     <Button
         android:id="@+id/no17"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -245,11 +232,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/no16"
         app:layout_constraintRight_toLeftOf="@+id/no18"
-        app:layout_constraintTop_toBottomOf="@+id/seven"/>
+        app:layout_constraintTop_toBottomOf="@+id/seven" />
 
     <Button
         android:id="@+id/no18"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -263,7 +249,6 @@
 
     <Button
         android:id="@+id/no19"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -273,11 +258,10 @@
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/no18"
         app:layout_constraintRight_toLeftOf="@+id/no20"
-        app:layout_constraintTop_toBottomOf="@+id/nine"/>
+        app:layout_constraintTop_toBottomOf="@+id/nine" />
 
     <Button
         android:id="@+id/no20"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorTrueButton"
@@ -285,8 +269,763 @@
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/vertical1"
         app:layout_constraintLeft_toRightOf="@id/no19"
-        app:layout_constraintTop_toBottomOf="@+id/ten"/>
+        app:layout_constraintTop_toBottomOf="@+id/ten" />
+
+    <Button
+        android:id="@+id/no21"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="21"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/vertical2"
+        app:layout_constraintRight_toLeftOf="@+id/no22"
+        app:layout_constraintTop_toBottomOf="@+id/no11" />
+<Button
+    android:id="@+id/no22"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTrueButton"
+    android:text="20"
+    android:textColor="@color/colorText"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintLeft_toRightOf="@id/no21"
+    app:layout_constraintRight_toLeftOf="@+id/no23"
+    app:layout_constraintTop_toBottomOf="@+id/no12" />
+    <Button
+        android:id="@+id/no23"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="23"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no22"
+        app:layout_constraintRight_toLeftOf="@+id/no24"
+        app:layout_constraintTop_toBottomOf="@+id/no13" />
+
+    <Button
+        android:id="@+id/no24"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="24"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no23"
+        app:layout_constraintRight_toLeftOf="@+id/no25"
+        app:layout_constraintTop_toBottomOf="@+id/no14" />
+    <Button
+        android:id="@+id/no25"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="25"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no24"
+        app:layout_constraintRight_toLeftOf="@+id/no26"
+        app:layout_constraintTop_toBottomOf="@+id/no15" />
+    <Button
+        android:id="@+id/no26"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="26"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no25"
+        app:layout_constraintRight_toLeftOf="@+id/no27"
+        app:layout_constraintTop_toBottomOf="@+id/no16" />
+    <Button
+        android:id="@+id/no27"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="27"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no26"
+        app:layout_constraintRight_toLeftOf="@+id/no28"
+        app:layout_constraintTop_toBottomOf="@+id/no17" />
+    <Button
+        android:id="@+id/no28"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="28"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no27"
+        app:layout_constraintRight_toLeftOf="@+id/no29"
+        app:layout_constraintTop_toBottomOf="@+id/no18" />
+    <Button
+        android:id="@+id/no29"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="29"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no28"
+        app:layout_constraintRight_toLeftOf="@+id/no30"
+        app:layout_constraintTop_toBottomOf="@+id/no19" />
+    <Button
+        android:id="@+id/no30"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="30"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/vertical1"
+        app:layout_constraintLeft_toRightOf="@id/no29"
+        app:layout_constraintTop_toBottomOf="@+id/no20" />
+
+    <Button
+        android:id="@+id/no31"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="31"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/vertical2"
+        app:layout_constraintRight_toLeftOf="@+id/no32"
+        app:layout_constraintTop_toBottomOf="@+id/no21" />
+    <Button
+        android:id="@+id/no32"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="32"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no31"
+        app:layout_constraintRight_toLeftOf="@+id/no33"
+        app:layout_constraintTop_toBottomOf="@+id/no22" />
+    <Button
+        android:id="@+id/no33"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="33"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no32"
+        app:layout_constraintRight_toLeftOf="@+id/no34"
+        app:layout_constraintTop_toBottomOf="@+id/no23" />
+
+    <Button
+        android:id="@+id/no34"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="34"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no33"
+        app:layout_constraintRight_toLeftOf="@+id/no35"
+        app:layout_constraintTop_toBottomOf="@+id/no24" />
+    <Button
+        android:id="@+id/no35"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="35"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no34"
+        app:layout_constraintRight_toLeftOf="@+id/no36"
+        app:layout_constraintTop_toBottomOf="@+id/no25" />
+    <Button
+        android:id="@+id/no36"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="36"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no35"
+        app:layout_constraintRight_toLeftOf="@+id/no37"
+        app:layout_constraintTop_toBottomOf="@+id/no26" />
+    <Button
+        android:id="@+id/no37"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="37"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no36"
+        app:layout_constraintRight_toLeftOf="@+id/no38"
+        app:layout_constraintTop_toBottomOf="@+id/no27" />
+    <Button
+        android:id="@+id/no38"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="38"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no37"
+        app:layout_constraintRight_toLeftOf="@+id/no39"
+        app:layout_constraintTop_toBottomOf="@+id/no28" />
+    <Button
+        android:id="@+id/no39"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="39"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no38"
+        app:layout_constraintRight_toLeftOf="@+id/no40"
+        app:layout_constraintTop_toBottomOf="@+id/no29" />
+    <Button
+        android:id="@+id/no40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="40"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/vertical1"
+        app:layout_constraintLeft_toRightOf="@id/no39"
+        app:layout_constraintTop_toBottomOf="@+id/no30" />
+
+    <Button
+        android:id="@+id/no41"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="41"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/vertical2"
+        app:layout_constraintRight_toLeftOf="@+id/no42"
+        app:layout_constraintTop_toBottomOf="@+id/no31" />
+    <Button
+        android:id="@+id/no42"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="42"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no41"
+        app:layout_constraintRight_toLeftOf="@+id/no43"
+        app:layout_constraintTop_toBottomOf="@+id/no32" />
+    <Button
+        android:id="@+id/no43"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="43"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no42"
+        app:layout_constraintRight_toLeftOf="@+id/no44"
+        app:layout_constraintTop_toBottomOf="@+id/no33" />
+
+    <Button
+        android:id="@+id/no44"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="44"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no43"
+        app:layout_constraintRight_toLeftOf="@+id/no45"
+        app:layout_constraintTop_toBottomOf="@+id/no34" />
+    <Button
+        android:id="@+id/no45"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="45"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no44"
+        app:layout_constraintRight_toLeftOf="@+id/no46"
+        app:layout_constraintTop_toBottomOf="@+id/no35" />
+    <Button
+        android:id="@+id/no46"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="46"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no45"
+        app:layout_constraintRight_toLeftOf="@+id/no47"
+        app:layout_constraintTop_toBottomOf="@+id/no36" />
+    <Button
+        android:id="@+id/no47"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="47"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no46"
+        app:layout_constraintRight_toLeftOf="@+id/no48"
+        app:layout_constraintTop_toBottomOf="@+id/no37" />
+    <Button
+        android:id="@+id/no48"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="48"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no47"
+        app:layout_constraintRight_toLeftOf="@+id/no49"
+        app:layout_constraintTop_toBottomOf="@+id/no38" />
+    <Button
+        android:id="@+id/no49"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="49"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no48"
+        app:layout_constraintRight_toLeftOf="@+id/no50"
+        app:layout_constraintTop_toBottomOf="@+id/no39" />
+    <Button
+        android:id="@+id/no50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="50"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/vertical1"
+        app:layout_constraintLeft_toRightOf="@id/no49"
+        app:layout_constraintTop_toBottomOf="@+id/no40" />
+    <Button
+        android:id="@+id/no51"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="51"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/vertical2"
+        app:layout_constraintRight_toLeftOf="@+id/no52"
+        app:layout_constraintTop_toBottomOf="@+id/no41" />
+    <Button
+        android:id="@+id/no52"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="52"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no51"
+        app:layout_constraintRight_toLeftOf="@+id/no53"
+        app:layout_constraintTop_toBottomOf="@+id/no42" />
+    <Button
+        android:id="@+id/no53"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="53"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no52"
+        app:layout_constraintRight_toLeftOf="@+id/no54"
+        app:layout_constraintTop_toBottomOf="@+id/no43" />
+
+    <Button
+        android:id="@+id/no54"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="54"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no53"
+        app:layout_constraintRight_toLeftOf="@+id/no55"
+        app:layout_constraintTop_toBottomOf="@+id/no44" />
+    <Button
+        android:id="@+id/no55"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="55"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no54"
+        app:layout_constraintRight_toLeftOf="@+id/no56"
+        app:layout_constraintTop_toBottomOf="@+id/no45" />
+    <Button
+        android:id="@+id/no56"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="56"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no55"
+        app:layout_constraintRight_toLeftOf="@+id/no57"
+        app:layout_constraintTop_toBottomOf="@+id/no46" />
+    <Button
+        android:id="@+id/no57"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="57"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no56"
+        app:layout_constraintRight_toLeftOf="@+id/no58"
+        app:layout_constraintTop_toBottomOf="@+id/no47" />
+    <Button
+        android:id="@+id/no58"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="58"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no57"
+        app:layout_constraintRight_toLeftOf="@+id/no59"
+        app:layout_constraintTop_toBottomOf="@+id/no48" />
+    <Button
+        android:id="@+id/no59"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="59"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no58"
+        app:layout_constraintRight_toLeftOf="@+id/no60"
+        app:layout_constraintTop_toBottomOf="@+id/no49" />
+    <Button
+        android:id="@+id/no60"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="60"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/vertical1"
+        app:layout_constraintLeft_toRightOf="@id/no59"
+        app:layout_constraintTop_toBottomOf="@+id/no50" />
+
+    <Button
+        android:id="@+id/no61"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="61"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/vertical2"
+        app:layout_constraintRight_toLeftOf="@+id/no62"
+        app:layout_constraintTop_toBottomOf="@+id/no51" />
+    <Button
+        android:id="@+id/no62"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="62"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no61"
+        app:layout_constraintRight_toLeftOf="@+id/no63"
+        app:layout_constraintTop_toBottomOf="@+id/no52" />
+    <Button
+        android:id="@+id/no63"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="63"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no62"
+        app:layout_constraintRight_toLeftOf="@+id/no64"
+        app:layout_constraintTop_toBottomOf="@+id/no53" />
+
+    <Button
+        android:id="@+id/no64"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="64"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no63"
+        app:layout_constraintRight_toLeftOf="@+id/no65"
+        app:layout_constraintTop_toBottomOf="@+id/no54" />
+    <Button
+        android:id="@+id/no65"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="65"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no64"
+        app:layout_constraintRight_toLeftOf="@+id/no66"
+        app:layout_constraintTop_toBottomOf="@+id/no55" />
+    <Button
+        android:id="@+id/no66"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="66"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no65"
+        app:layout_constraintRight_toLeftOf="@+id/no67"
+        app:layout_constraintTop_toBottomOf="@+id/no56" />
+    <Button
+        android:id="@+id/no67"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="67"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no66"
+        app:layout_constraintRight_toLeftOf="@+id/no68"
+        app:layout_constraintTop_toBottomOf="@+id/no57" />
+    <Button
+        android:id="@+id/no68"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="68"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no67"
+        app:layout_constraintRight_toLeftOf="@+id/no69"
+        app:layout_constraintTop_toBottomOf="@+id/no58" />
+    <Button
+        android:id="@+id/no69"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="69"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no68"
+        app:layout_constraintRight_toLeftOf="@+id/no70"
+        app:layout_constraintTop_toBottomOf="@+id/no59" />
+    <Button
+        android:id="@+id/no70"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="70"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/vertical1"
+        app:layout_constraintLeft_toRightOf="@id/no69"
+        app:layout_constraintTop_toBottomOf="@+id/no60" />
+
+
+    <Button
+        android:id="@+id/no71"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="71"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/vertical2"
+        app:layout_constraintRight_toLeftOf="@+id/no72"
+        app:layout_constraintTop_toBottomOf="@+id/no61" />
+    <Button
+        android:id="@+id/no72"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="72"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no71"
+        app:layout_constraintRight_toLeftOf="@+id/no73"
+        app:layout_constraintTop_toBottomOf="@+id/no62" />
+    <Button
+        android:id="@+id/no73"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="73"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no72"
+        app:layout_constraintRight_toLeftOf="@+id/no74"
+        app:layout_constraintTop_toBottomOf="@+id/no63" />
+
+    <Button
+        android:id="@+id/no74"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="74"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no73"
+        app:layout_constraintRight_toLeftOf="@+id/no75"
+        app:layout_constraintTop_toBottomOf="@+id/no64" />
+    <Button
+        android:id="@+id/no75"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="75"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no74"
+        app:layout_constraintRight_toLeftOf="@+id/no76"
+        app:layout_constraintTop_toBottomOf="@+id/no65" />
+    <Button
+        android:id="@+id/no76"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="76"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no75"
+        app:layout_constraintRight_toLeftOf="@+id/no77"
+        app:layout_constraintTop_toBottomOf="@+id/no66" />
+    <Button
+        android:id="@+id/no77"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="77"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no76"
+        app:layout_constraintRight_toLeftOf="@+id/no78"
+        app:layout_constraintTop_toBottomOf="@+id/no67" />
+    <Button
+        android:id="@+id/no78"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="78"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no77"
+        app:layout_constraintRight_toLeftOf="@+id/no79"
+        app:layout_constraintTop_toBottomOf="@+id/no68" />
+    <Button
+        android:id="@+id/no79"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="79"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/no78"
+        app:layout_constraintRight_toLeftOf="@+id/no80"
+        app:layout_constraintTop_toBottomOf="@+id/no69" />
+    <Button
+        android:id="@+id/no80"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTrueButton"
+        android:text="80"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/vertical1"
+        app:layout_constraintLeft_toRightOf="@id/no79"
+        app:layout_constraintTop_toBottomOf="@+id/no70" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
