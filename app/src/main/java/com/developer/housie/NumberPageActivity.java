@@ -6,12 +6,21 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 
 public class NumberPageActivity extends AppCompatActivity implements View.OnClickListener {
 
 
+    ImageView randomPop;
+    TextView displayText;
+    ArrayList<Integer> list = new ArrayList<Integer>();
+    int index;
     Button mButton[] = new Button[100];
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
@@ -20,6 +29,9 @@ public class NumberPageActivity extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.activity_number_page);
 //        setRequestedOrientation (SCREEN_ORIENTATION_LANDSCAPE);
 
+
+        randomPop = (ImageView) findViewById(R.id.randomPopup);
+        displayText = (TextView)findViewById(R.id.textView);
         mButton[0] = (Button) findViewById(R.id.one);
         mButton[1] = (Button) findViewById(R.id.two);
         mButton[2] = (Button) findViewById(R.id.three);
@@ -96,81 +108,155 @@ public class NumberPageActivity extends AppCompatActivity implements View.OnClic
         mButton[68] = (Button) findViewById(R.id.no69);
         mButton[69] = (Button) findViewById(R.id.no70);
 
+        mButton[70] = (Button) findViewById(R.id.no71);
+        mButton[71] = (Button) findViewById(R.id.no72);
+        mButton[72] = (Button) findViewById(R.id.no73);
+        mButton[73] = (Button) findViewById(R.id.no74);
+        mButton[74] = (Button) findViewById(R.id.no75);
+        mButton[75] = (Button) findViewById(R.id.no76);
+        mButton[76] = (Button) findViewById(R.id.no77);
+        mButton[77] = (Button) findViewById(R.id.no78);
+        mButton[78] = (Button) findViewById(R.id.no79);
+        mButton[79] = (Button) findViewById(R.id.no80);
 
-        mButton[0].setOnClickListener(this);
-        mButton[1].setOnClickListener(this);
-        mButton[2].setOnClickListener(this);
-        mButton[3].setOnClickListener(this);
-        mButton[4].setOnClickListener(this);
-        mButton[5].setOnClickListener(this);
-        mButton[6].setOnClickListener(this);
-        mButton[7].setOnClickListener(this);
-        mButton[8].setOnClickListener(this);
-        mButton[9].setOnClickListener(this);
+        mButton[80] = (Button) findViewById(R.id.no81);
+        mButton[81] = (Button) findViewById(R.id.no82);
+        mButton[82] = (Button) findViewById(R.id.no83);
+        mButton[83] = (Button) findViewById(R.id.no84);
+        mButton[84] = (Button) findViewById(R.id.no85);
+        mButton[85] = (Button) findViewById(R.id.no86);
+        mButton[86] = (Button) findViewById(R.id.no87);
+        mButton[87] = (Button) findViewById(R.id.no88);
+        mButton[88] = (Button) findViewById(R.id.no89);
+        mButton[89] = (Button) findViewById(R.id.no90);
 
-        mButton[10].setOnClickListener(this);
-        mButton[11].setOnClickListener(this);
-        mButton[12].setOnClickListener(this);
-        mButton[13].setOnClickListener(this);
-        mButton[14].setOnClickListener(this);
-        mButton[15].setOnClickListener(this);
-        mButton[16].setOnClickListener(this);
-        mButton[17].setOnClickListener(this);
-        mButton[18].setOnClickListener(this);
-        mButton[19].setOnClickListener(this);
+        mButton[90] = (Button) findViewById(R.id.no91);
+        mButton[91] = (Button) findViewById(R.id.no92);
+        mButton[92] = (Button) findViewById(R.id.no93);
+        mButton[93] = (Button) findViewById(R.id.no94);
+        mButton[94] = (Button) findViewById(R.id.no95);
+        mButton[95] = (Button) findViewById(R.id.no96);
+        mButton[96] = (Button) findViewById(R.id.no97);
+        mButton[97] = (Button) findViewById(R.id.no98);
+        mButton[98] = (Button) findViewById(R.id.no99);
+        mButton[99] = (Button) findViewById(R.id.no100);
 
-        mButton[20].setOnClickListener(this);
-        mButton[21].setOnClickListener(this);
-        mButton[22].setOnClickListener(this);
-        mButton[23].setOnClickListener(this);
-        mButton[24].setOnClickListener(this);
-        mButton[25].setOnClickListener(this);
-        mButton[26].setOnClickListener(this);
-        mButton[27].setOnClickListener(this);
-        mButton[28].setOnClickListener(this);
-        mButton[29].setOnClickListener(this);
 
-        mButton[30].setOnClickListener(this);
-        mButton[31].setOnClickListener(this);
-        mButton[32].setOnClickListener(this);
-        mButton[33].setOnClickListener(this);
-        mButton[34].setOnClickListener(this);
-        mButton[35].setOnClickListener(this);
-        mButton[36].setOnClickListener(this);
-        mButton[37].setOnClickListener(this);
-        mButton[38].setOnClickListener(this);
-        mButton[39].setOnClickListener(this);
 
-        mButton[40].setOnClickListener(this);
-        mButton[41].setOnClickListener(this);
-        mButton[42].setOnClickListener(this);
-        mButton[43].setOnClickListener(this);
-        mButton[44].setOnClickListener(this);
-        mButton[45].setOnClickListener(this);
-        mButton[46].setOnClickListener(this);
-        mButton[47].setOnClickListener(this);
-        mButton[48].setOnClickListener(this);
-        mButton[49].setOnClickListener(this);
-        mButton[50].setOnClickListener(this);
-        mButton[51].setOnClickListener(this);
-        mButton[52].setOnClickListener(this);
-        mButton[53].setOnClickListener(this);
-        mButton[54].setOnClickListener(this);
-        mButton[55].setOnClickListener(this);
-        mButton[56].setOnClickListener(this);
-        mButton[57].setOnClickListener(this);
-        mButton[58].setOnClickListener(this);
-        mButton[59].setOnClickListener(this);
-        mButton[60].setOnClickListener(this);
-        mButton[61].setOnClickListener(this);
-        mButton[62].setOnClickListener(this);
-        mButton[63].setOnClickListener(this);
-        mButton[64].setOnClickListener(this);
-        mButton[65].setOnClickListener(this);
-        mButton[66].setOnClickListener(this);
-        mButton[67].setOnClickListener(this);
-        mButton[68].setOnClickListener(this);
-        mButton[69].setOnClickListener(this);
+
+//        mButton[0].setOnClickListener(this);
+//        mButton[1].setOnClickListener(this);
+//        mButton[2].setOnClickListener(this);
+//        mButton[3].setOnClickListener(this);
+//        mButton[4].setOnClickListener(this);
+//        mButton[5].setOnClickListener(this);
+//        mButton[6].setOnClickListener(this);
+//        mButton[7].setOnClickListener(this);
+//        mButton[8].setOnClickListener(this);
+//        mButton[9].setOnClickListener(this);
+//
+//        mButton[10].setOnClickListener(this);
+//        mButton[11].setOnClickListener(this);
+//        mButton[12].setOnClickListener(this);
+//        mButton[13].setOnClickListener(this);
+//        mButton[14].setOnClickListener(this);
+//        mButton[15].setOnClickListener(this);
+//        mButton[16].setOnClickListener(this);
+//        mButton[17].setOnClickListener(this);
+//        mButton[18].setOnClickListener(this);
+//        mButton[19].setOnClickListener(this);
+//
+//        mButton[20].setOnClickListener(this);
+//        mButton[21].setOnClickListener(this);
+//        mButton[22].setOnClickListener(this);
+//        mButton[23].setOnClickListener(this);
+//        mButton[24].setOnClickListener(this);
+//        mButton[25].setOnClickListener(this);
+//        mButton[26].setOnClickListener(this);
+//        mButton[27].setOnClickListener(this);
+//        mButton[28].setOnClickListener(this);
+//        mButton[29].setOnClickListener(this);
+//
+//        mButton[30].setOnClickListener(this);
+//        mButton[31].setOnClickListener(this);
+//        mButton[32].setOnClickListener(this);
+//        mButton[33].setOnClickListener(this);
+//        mButton[34].setOnClickListener(this);
+//        mButton[35].setOnClickListener(this);
+//        mButton[36].setOnClickListener(this);
+//        mButton[37].setOnClickListener(this);
+//        mButton[38].setOnClickListener(this);
+//        mButton[39].setOnClickListener(this);
+//
+//        mButton[40].setOnClickListener(this);
+//        mButton[41].setOnClickListener(this);
+//        mButton[42].setOnClickListener(this);
+//        mButton[43].setOnClickListener(this);
+//        mButton[44].setOnClickListener(this);
+//        mButton[45].setOnClickListener(this);
+//        mButton[46].setOnClickListener(this);
+//        mButton[47].setOnClickListener(this);
+//        mButton[48].setOnClickListener(this);
+//        mButton[49].setOnClickListener(this);
+//        mButton[50].setOnClickListener(this);
+//        mButton[51].setOnClickListener(this);
+//        mButton[52].setOnClickListener(this);
+//        mButton[53].setOnClickListener(this);
+//        mButton[54].setOnClickListener(this);
+//        mButton[55].setOnClickListener(this);
+//        mButton[56].setOnClickListener(this);
+//        mButton[57].setOnClickListener(this);
+//        mButton[58].setOnClickListener(this);
+//        mButton[59].setOnClickListener(this);
+//        mButton[60].setOnClickListener(this);
+//        mButton[61].setOnClickListener(this);
+//        mButton[62].setOnClickListener(this);
+//        mButton[63].setOnClickListener(this);
+//        mButton[64].setOnClickListener(this);
+//        mButton[65].setOnClickListener(this);
+//        mButton[66].setOnClickListener(this);
+//        mButton[67].setOnClickListener(this);
+//        mButton[68].setOnClickListener(this);
+//        mButton[69].setOnClickListener(this);
+        index = 0;
+
+        for (int i=1; i<=100; i++) {
+            list.add(new Integer(i));
+        }
+        Collections.shuffle(list);
+
+
+        randomPop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int random_number;
+                random_number = list.get(index);
+                displayText.setText(String.valueOf(random_number));
+//                mButton[random_number-1].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+                mButton[random_number-1].setTextColor(getResources().getColor(R.color.colorFalseButton));
+                index++;
+
+                if(index==0)
+                {
+                    finish();
+                }
+            }
+        });
+
+
+    }
+
+    @Override
+    public void onClick(View view) {
+
+
+        view.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+
+    }
+}
+
+
+
 
 
 //
@@ -244,14 +330,3 @@ public class NumberPageActivity extends AppCompatActivity implements View.OnClic
 //                btn10.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
 //            }
 //        });
-
-    }
-
-    @Override
-    public void onClick(View view) {
-
-
-        view.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-
-    }
-}

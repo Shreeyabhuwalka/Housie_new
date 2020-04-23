@@ -7,8 +7,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/woden2"
     tools:context=".PlayBoardActivity">
-
-
     <Button
         android:id="@+id/btn_one"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
@@ -30,7 +28,6 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
-
         android:fontFamily="monospace"
         android:textColor="@android:color/black"
         android:textSize="25sp"
@@ -442,6 +439,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintGuide_percent="0.19" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -20,9 +22,6 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
 //    Button btn_random;
     Button buttons[] = new Button[27];
 
-
-
-    //Button buttons[] = new Button[15];
 
 //    Button btn_random1;
 //    Button btn_random2;
@@ -49,9 +48,9 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.activity_play_board);
 //        setRequestedOrientation (SCREEN_ORIENTATION_LANDSCAPE);
 
-
-
 //        btn_random = (Button) findViewById(R.id.random_btn_id);
+
+
         buttons[0] = (Button) findViewById(R.id.btn_one);
         buttons[1] = (Button) findViewById(R.id.btn_two);
         buttons[2] = (Button) findViewById(R.id.btn_three);
@@ -79,7 +78,6 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
         buttons[24] = (Button) findViewById(R.id.btn3_seven);
         buttons[25] = (Button) findViewById(R.id.btn3_eight);
         buttons[26] = (Button) findViewById(R.id.btn3_nine);
-
 
 
         randomNumberCreation();
@@ -113,6 +111,42 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
         buttons[24].setOnClickListener(this);
         buttons[25].setOnClickListener(this);
         buttons[26].setOnClickListener(this);
+    }
+    public void randomNumberCreation() {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i=1; i<=100; i++) {
+            list.add(new Integer(i));
+        }
+        Collections.shuffle(list);
+
+        Random val = new Random();
+        int m = 0,random;
+        for (int k = 0; k < 19; k += 9) {
+            int a[] = {1, 1, 1, 1, 1, 1, 1, 1, 1};
+
+            for (int i = 1; i <= 5; i++) {
+                do {
+                    random= val.nextInt(9) + k; // [0, 8] + k => [k,k+[9]]
+                } while (a[random - k] == 0);
+                Log.i("Message", String.valueOf(random));
+                buttons[random].setText(String.valueOf(list.get(m++)));
+                a[random - k] = 0;
+            }
+        }
+        for (int i=0; i<10; i++) {
+            System.out.println(list.get(i));
+
+        }
+    }
+
+    @Override
+    public void onClick(View view) {
+
+        view.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+
+    }
+}
+
 
 
 //        btn_random.setOnClickListener(new View.OnClickListener() {
@@ -315,41 +349,3 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
 //                buttons[26].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
 //            }
 //        });
-
-
-
-    }
-    public void randomNumberCreation() {
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        for (int i=1; i<=100; i++) {
-            list.add(new Integer(i));
-        }
-        Collections.shuffle(list);
-
-        Random val = new Random();
-        int m = 0,random;
-        for (int k = 0; k < 19; k += 9) {
-            int a[] = {1, 1, 1, 1, 1, 1, 1, 1, 1};
-
-            for (int i = 1; i <= 5; i++) {
-                do {
-                    random= val.nextInt(9) + k; // [0, 8] + k => [k,k+[9]]
-                } while (a[random - k] == 0);
-                Log.i("Message", String.valueOf(random));
-                buttons[random].setText(String.valueOf(list.get(m++)));
-                a[random - k] = 0;
-            }
-        }
-        for (int i=0; i<10; i++) {
-            System.out.println(list.get(i));
-
-        }
-    }
-
-    @Override
-    public void onClick(View view) {
-
-        view.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-
-    }
-}
