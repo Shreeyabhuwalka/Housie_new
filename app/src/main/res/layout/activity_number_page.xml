@@ -1061,7 +1061,7 @@
             android:textColor="@android:color/white"
             android:textSize="50sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_second"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/vertical2"
             app:layout_constraintTop_toBottomOf="@+id/randomPopup" />

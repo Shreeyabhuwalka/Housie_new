@@ -12,15 +12,17 @@
  style="@style/Base.Widget.AppCompat.Button.Borderless"-->
 
 
+
     <Button
         android:id="@+id/one"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="1"
+        android:text="0"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no11"
         app:layout_constraintRight_toLeftOf="@+id/two"
         app:layout_constraintStart_toStartOf="@+id/vertical2"
         app:layout_constraintTop_toTopOf="@id/horizontal1" />
@@ -28,12 +30,13 @@
     <Button
         android:id="@+id/two"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="2"
+        android:text="1"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no12"
         app:layout_constraintLeft_toRightOf="@+id/one"
         app:layout_constraintRight_toLeftOf="@+id/three"
         app:layout_constraintTop_toTopOf="@id/horizontal1" />
@@ -41,12 +44,13 @@
     <Button
         android:id="@+id/three"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="3"
-        android:textColor="@color/colorText"
+        android:text="2"
         android:textSize="20sp"
+        android:textColor="@color/colorText"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no13"
         app:layout_constraintLeft_toRightOf="@+id/two"
         app:layout_constraintRight_toLeftOf="@+id/four"
         app:layout_constraintTop_toTopOf="@id/horizontal1" />
@@ -55,12 +59,13 @@
     <Button
         android:id="@+id/four"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="4"
+        android:text="3"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no14"
         app:layout_constraintLeft_toRightOf="@+id/three"
         app:layout_constraintRight_toLeftOf="@+id/five"
         app:layout_constraintTop_toTopOf="@id/horizontal1" />
@@ -68,12 +73,13 @@
     <Button
         android:id="@+id/five"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="5"
+        android:text="4"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no15"
         app:layout_constraintLeft_toRightOf="@+id/four"
         app:layout_constraintRight_toLeftOf="@+id/six"
         app:layout_constraintTop_toTopOf="@id/horizontal1" />
@@ -81,12 +87,13 @@
     <Button
         android:id="@+id/six"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="6"
+        android:text="5"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no16"
         app:layout_constraintLeft_toRightOf="@+id/five"
         app:layout_constraintRight_toLeftOf="@+id/seven"
         app:layout_constraintTop_toTopOf="@id/horizontal1" />
@@ -94,12 +101,13 @@
     <Button
         android:id="@+id/seven"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="7"
+        android:text="6"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no17"
         app:layout_constraintLeft_toRightOf="@+id/six"
         app:layout_constraintRight_toLeftOf="@+id/eight"
         app:layout_constraintTop_toTopOf="@id/horizontal1" />
@@ -107,12 +115,13 @@
     <Button
         android:id="@+id/eight"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="8"
+        android:text="7"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no18"
         app:layout_constraintLeft_toRightOf="@+id/seven"
         app:layout_constraintRight_toLeftOf="@+id/nine"
         app:layout_constraintTop_toTopOf="@id/horizontal1" />
@@ -120,12 +129,13 @@
     <Button
         android:id="@+id/nine"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="9"
+        android:text="8"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no19"
         app:layout_constraintLeft_toRightOf="@+id/eight"
         app:layout_constraintRight_toLeftOf="@+id/ten"
         app:layout_constraintTop_toTopOf="@id/horizontal1" />
@@ -133,12 +143,13 @@
     <Button
         android:id="@+id/ten"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="10"
+        android:text="9"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no20"
         app:layout_constraintEnd_toEndOf="@id/vertical1"
         app:layout_constraintLeft_toRightOf="@id/nine"
         app:layout_constraintTop_toTopOf="@id/horizontal1" />
@@ -146,12 +157,14 @@
     <Button
         android:id="@+id/no11"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="11"
+        android:text="10"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no21"
+
         app:layout_constraintRight_toLeftOf="@+id/no12"
         app:layout_constraintStart_toStartOf="@id/vertical2"
         app:layout_constraintTop_toBottomOf="@+id/one" />
@@ -159,12 +172,14 @@
     <Button
         android:id="@+id/no12"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="12"
+        android:text="11"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no22"
+
         app:layout_constraintLeft_toRightOf="@+id/no11"
         app:layout_constraintRight_toLeftOf="@+id/no13"
         app:layout_constraintTop_toBottomOf="@+id/two" />
@@ -172,12 +187,14 @@
     <Button
         android:id="@+id/no13"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="13"
+        android:text="12"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no23"
+
         app:layout_constraintLeft_toRightOf="@+id/no12"
         app:layout_constraintRight_toLeftOf="@+id/no14"
         app:layout_constraintTop_toBottomOf="@+id/three" />
@@ -185,12 +202,13 @@
     <Button
         android:id="@+id/no14"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="14"
+        android:text="13"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no24"
         app:layout_constraintLeft_toRightOf="@+id/no13"
         app:layout_constraintRight_toLeftOf="@+id/no15"
         app:layout_constraintTop_toBottomOf="@+id/four" />
@@ -198,12 +216,13 @@
     <Button
         android:id="@+id/no15"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="15"
+        android:text="14"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no25"
         app:layout_constraintLeft_toRightOf="@+id/no14"
         app:layout_constraintRight_toLeftOf="@+id/no16"
         app:layout_constraintTop_toBottomOf="@+id/five" />
@@ -211,12 +230,13 @@
     <Button
         android:id="@+id/no16"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="16"
+        android:text="15"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no26"
         app:layout_constraintLeft_toRightOf="@+id/no15"
         app:layout_constraintRight_toLeftOf="@+id/no17"
         app:layout_constraintTop_toBottomOf="@+id/six" />
@@ -224,12 +244,13 @@
     <Button
         android:id="@+id/no17"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="17"
+        android:text="16"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no27"
         app:layout_constraintLeft_toRightOf="@+id/no16"
         app:layout_constraintRight_toLeftOf="@+id/no18"
         app:layout_constraintTop_toBottomOf="@+id/seven" />
@@ -237,12 +258,13 @@
     <Button
         android:id="@+id/no18"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="18"
+        android:text="17"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no28"
         app:layout_constraintLeft_toRightOf="@+id/no17"
         app:layout_constraintRight_toLeftOf="@+id/no19"
         app:layout_constraintTop_toBottomOf="@+id/eight" />
@@ -250,12 +272,13 @@
     <Button
         android:id="@+id/no19"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="19"
+        android:text="18"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no29"
         app:layout_constraintLeft_toRightOf="@+id/no18"
         app:layout_constraintRight_toLeftOf="@+id/no20"
         app:layout_constraintTop_toBottomOf="@+id/nine" />
@@ -263,12 +286,13 @@
     <Button
         android:id="@+id/no20"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="20"
+        android:text="19"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no30"
         app:layout_constraintEnd_toEndOf="@id/vertical1"
         app:layout_constraintLeft_toRightOf="@id/no19"
         app:layout_constraintTop_toBottomOf="@+id/ten" />
@@ -276,12 +300,14 @@
     <Button
         android:id="@+id/no21"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="21"
+        android:text="20"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no31"
+
         app:layout_constraintRight_toLeftOf="@+id/no22"
         app:layout_constraintStart_toStartOf="@id/vertical2"
         app:layout_constraintTop_toBottomOf="@+id/no11" />
@@ -289,12 +315,13 @@
     <Button
         android:id="@+id/no22"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="20"
+        android:text="21"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no32"
         app:layout_constraintLeft_toRightOf="@id/no21"
         app:layout_constraintRight_toLeftOf="@+id/no23"
         app:layout_constraintTop_toBottomOf="@+id/no12" />
@@ -302,12 +329,13 @@
     <Button
         android:id="@+id/no23"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="23"
+        android:text="22"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no33"
         app:layout_constraintLeft_toRightOf="@id/no22"
         app:layout_constraintRight_toLeftOf="@+id/no24"
         app:layout_constraintTop_toBottomOf="@+id/no13" />
@@ -315,12 +343,13 @@
     <Button
         android:id="@+id/no24"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="24"
+        android:text="23"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no34"
         app:layout_constraintLeft_toRightOf="@id/no23"
         app:layout_constraintRight_toLeftOf="@+id/no25"
         app:layout_constraintTop_toBottomOf="@+id/no14" />
@@ -328,12 +357,13 @@
     <Button
         android:id="@+id/no25"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="25"
+        android:text="24"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no35"
         app:layout_constraintLeft_toRightOf="@id/no24"
         app:layout_constraintRight_toLeftOf="@+id/no26"
         app:layout_constraintTop_toBottomOf="@+id/no15" />
@@ -341,12 +371,13 @@
     <Button
         android:id="@+id/no26"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="26"
+        android:text="25"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no36"
         app:layout_constraintLeft_toRightOf="@id/no25"
         app:layout_constraintRight_toLeftOf="@+id/no27"
         app:layout_constraintTop_toBottomOf="@+id/no16" />
@@ -354,12 +385,13 @@
     <Button
         android:id="@+id/no27"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="27"
+        android:text="26"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no37"
         app:layout_constraintLeft_toRightOf="@id/no26"
         app:layout_constraintRight_toLeftOf="@+id/no28"
         app:layout_constraintTop_toBottomOf="@+id/no17" />
@@ -367,12 +399,14 @@
     <Button
         android:id="@+id/no28"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="28"
+        android:text="27"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no38"
+
         app:layout_constraintLeft_toRightOf="@id/no27"
         app:layout_constraintRight_toLeftOf="@+id/no29"
         app:layout_constraintTop_toBottomOf="@+id/no18" />
@@ -380,12 +414,14 @@
     <Button
         android:id="@+id/no29"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="29"
+        android:text="28"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no39"
+
         app:layout_constraintLeft_toRightOf="@id/no28"
         app:layout_constraintRight_toLeftOf="@+id/no30"
         app:layout_constraintTop_toBottomOf="@+id/no19" />
@@ -393,12 +429,14 @@
     <Button
         android:id="@+id/no30"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="30"
+        android:text="29"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no40"
+
         app:layout_constraintEnd_toEndOf="@id/vertical1"
         app:layout_constraintLeft_toRightOf="@id/no29"
         app:layout_constraintTop_toBottomOf="@+id/no20" />
@@ -406,12 +444,14 @@
     <Button
         android:id="@+id/no31"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="31"
+        android:text="30"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no41"
+
         app:layout_constraintRight_toLeftOf="@+id/no32"
         app:layout_constraintStart_toStartOf="@id/vertical2"
         app:layout_constraintTop_toBottomOf="@+id/no21" />
@@ -419,12 +459,13 @@
     <Button
         android:id="@+id/no32"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="32"
+        android:text="31"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no42"
         app:layout_constraintLeft_toRightOf="@id/no31"
         app:layout_constraintRight_toLeftOf="@+id/no33"
         app:layout_constraintTop_toBottomOf="@+id/no22" />
@@ -432,12 +473,14 @@
     <Button
         android:id="@+id/no33"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="33"
+        android:text="32"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no43"
+
         app:layout_constraintLeft_toRightOf="@id/no32"
         app:layout_constraintRight_toLeftOf="@+id/no34"
         app:layout_constraintTop_toBottomOf="@+id/no23" />
@@ -445,12 +488,14 @@
     <Button
         android:id="@+id/no34"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="34"
+        android:text="33"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no44"
+
         app:layout_constraintLeft_toRightOf="@id/no33"
         app:layout_constraintRight_toLeftOf="@+id/no35"
         app:layout_constraintTop_toBottomOf="@+id/no24" />
@@ -458,12 +503,14 @@
     <Button
         android:id="@+id/no35"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="35"
+        android:text="34"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no45"
+
         app:layout_constraintLeft_toRightOf="@id/no34"
         app:layout_constraintRight_toLeftOf="@+id/no36"
         app:layout_constraintTop_toBottomOf="@+id/no25" />
@@ -471,12 +518,13 @@
     <Button
         android:id="@+id/no36"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="36"
+        android:text="35"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no46"
         app:layout_constraintLeft_toRightOf="@id/no35"
         app:layout_constraintRight_toLeftOf="@+id/no37"
         app:layout_constraintTop_toBottomOf="@+id/no26" />
@@ -484,12 +532,14 @@
     <Button
         android:id="@+id/no37"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="37"
+        android:text="36"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no47"
+
         app:layout_constraintLeft_toRightOf="@id/no36"
         app:layout_constraintRight_toLeftOf="@+id/no38"
         app:layout_constraintTop_toBottomOf="@+id/no27" />
@@ -497,12 +547,14 @@
     <Button
         android:id="@+id/no38"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="38"
+        android:text="37"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no48"
+
         app:layout_constraintLeft_toRightOf="@id/no37"
         app:layout_constraintRight_toLeftOf="@+id/no39"
         app:layout_constraintTop_toBottomOf="@+id/no28" />
@@ -510,12 +562,14 @@
     <Button
         android:id="@+id/no39"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="39"
+        android:text="38"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no49"
+
         app:layout_constraintLeft_toRightOf="@id/no38"
         app:layout_constraintRight_toLeftOf="@+id/no40"
         app:layout_constraintTop_toBottomOf="@+id/no29" />
@@ -523,12 +577,14 @@
     <Button
         android:id="@+id/no40"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="40"
+        android:text="39"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no50"
+
         app:layout_constraintEnd_toEndOf="@id/vertical1"
         app:layout_constraintLeft_toRightOf="@id/no39"
         app:layout_constraintTop_toBottomOf="@+id/no30" />
@@ -536,12 +592,13 @@
     <Button
         android:id="@+id/no41"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="41"
+        android:text="40"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no51"
         app:layout_constraintRight_toLeftOf="@+id/no42"
         app:layout_constraintStart_toStartOf="@id/vertical2"
         app:layout_constraintTop_toBottomOf="@+id/no31" />
@@ -549,12 +606,14 @@
     <Button
         android:id="@+id/no42"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="42"
+        android:text="41"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no52"
+
         app:layout_constraintLeft_toRightOf="@id/no41"
         app:layout_constraintRight_toLeftOf="@+id/no43"
         app:layout_constraintTop_toBottomOf="@+id/no32" />
@@ -562,12 +621,14 @@
     <Button
         android:id="@+id/no43"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="43"
+        android:text="42"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no53"
+
         app:layout_constraintLeft_toRightOf="@id/no42"
         app:layout_constraintRight_toLeftOf="@+id/no44"
         app:layout_constraintTop_toBottomOf="@+id/no33" />
@@ -575,12 +636,14 @@
     <Button
         android:id="@+id/no44"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="44"
+        android:text="43"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no54"
+
         app:layout_constraintLeft_toRightOf="@id/no43"
         app:layout_constraintRight_toLeftOf="@+id/no45"
         app:layout_constraintTop_toBottomOf="@+id/no34" />
@@ -588,12 +651,14 @@
     <Button
         android:id="@+id/no45"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="45"
+        android:text="44"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no55"
+
         app:layout_constraintLeft_toRightOf="@id/no44"
         app:layout_constraintRight_toLeftOf="@+id/no46"
         app:layout_constraintTop_toBottomOf="@+id/no35" />
@@ -601,12 +666,14 @@
     <Button
         android:id="@+id/no46"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="46"
+        android:text="45"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no56"
+
         app:layout_constraintLeft_toRightOf="@id/no45"
         app:layout_constraintRight_toLeftOf="@+id/no47"
         app:layout_constraintTop_toBottomOf="@+id/no36" />
@@ -614,12 +681,14 @@
     <Button
         android:id="@+id/no47"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="47"
+        android:text="46"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no57"
+
         app:layout_constraintLeft_toRightOf="@id/no46"
         app:layout_constraintRight_toLeftOf="@+id/no48"
         app:layout_constraintTop_toBottomOf="@+id/no37" />
@@ -627,12 +696,14 @@
     <Button
         android:id="@+id/no48"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="48"
+        android:text="47"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no58"
+
         app:layout_constraintLeft_toRightOf="@id/no47"
         app:layout_constraintRight_toLeftOf="@+id/no49"
         app:layout_constraintTop_toBottomOf="@+id/no38" />
@@ -640,12 +711,14 @@
     <Button
         android:id="@+id/no49"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="49"
+        android:text="48"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no59"
+
         app:layout_constraintLeft_toRightOf="@id/no48"
         app:layout_constraintRight_toLeftOf="@+id/no50"
         app:layout_constraintTop_toBottomOf="@+id/no39" />
@@ -653,12 +726,14 @@
     <Button
         android:id="@+id/no50"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="50"
+        android:text="49"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no60"
+
         app:layout_constraintEnd_toEndOf="@id/vertical1"
         app:layout_constraintLeft_toRightOf="@id/no49"
         app:layout_constraintTop_toBottomOf="@+id/no40" />
@@ -666,12 +741,14 @@
     <Button
         android:id="@+id/no51"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="51"
+        android:text="50"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no61"
+
         app:layout_constraintRight_toLeftOf="@+id/no52"
         app:layout_constraintStart_toStartOf="@id/vertical2"
         app:layout_constraintTop_toBottomOf="@+id/no41" />
@@ -679,12 +756,13 @@
     <Button
         android:id="@+id/no52"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="52"
+        android:text="51"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no62"
         app:layout_constraintLeft_toRightOf="@id/no51"
         app:layout_constraintRight_toLeftOf="@+id/no53"
         app:layout_constraintTop_toBottomOf="@+id/no42" />
@@ -692,12 +770,13 @@
     <Button
         android:id="@+id/no53"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="53"
+        android:text="52"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no63"
         app:layout_constraintLeft_toRightOf="@id/no52"
         app:layout_constraintRight_toLeftOf="@+id/no54"
         app:layout_constraintTop_toBottomOf="@+id/no43" />
@@ -705,12 +784,13 @@
     <Button
         android:id="@+id/no54"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="54"
+        android:text="53"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no64"
         app:layout_constraintLeft_toRightOf="@id/no53"
         app:layout_constraintRight_toLeftOf="@+id/no55"
         app:layout_constraintTop_toBottomOf="@+id/no44" />
@@ -718,12 +798,13 @@
     <Button
         android:id="@+id/no55"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="55"
+        android:text="54"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no65"
         app:layout_constraintLeft_toRightOf="@id/no54"
         app:layout_constraintRight_toLeftOf="@+id/no56"
         app:layout_constraintTop_toBottomOf="@+id/no45" />
@@ -731,12 +812,13 @@
     <Button
         android:id="@+id/no56"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="56"
+        android:text="55"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no66"
         app:layout_constraintLeft_toRightOf="@id/no55"
         app:layout_constraintRight_toLeftOf="@+id/no57"
         app:layout_constraintTop_toBottomOf="@+id/no46" />
@@ -744,12 +826,13 @@
     <Button
         android:id="@+id/no57"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="57"
+        android:text="56"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no67"
         app:layout_constraintLeft_toRightOf="@id/no56"
         app:layout_constraintRight_toLeftOf="@+id/no58"
         app:layout_constraintTop_toBottomOf="@+id/no47" />
@@ -757,12 +840,13 @@
     <Button
         android:id="@+id/no58"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="58"
+        android:text="57"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no68"
         app:layout_constraintLeft_toRightOf="@id/no57"
         app:layout_constraintRight_toLeftOf="@+id/no59"
         app:layout_constraintTop_toBottomOf="@+id/no48" />
@@ -770,12 +854,13 @@
     <Button
         android:id="@+id/no59"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="59"
+        android:text="58"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no69"
         app:layout_constraintLeft_toRightOf="@id/no58"
         app:layout_constraintRight_toLeftOf="@+id/no60"
         app:layout_constraintTop_toBottomOf="@+id/no49" />
@@ -783,12 +868,13 @@
     <Button
         android:id="@+id/no60"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="60"
+        android:text="59"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no70"
         app:layout_constraintEnd_toEndOf="@id/vertical1"
         app:layout_constraintLeft_toRightOf="@id/no59"
         app:layout_constraintTop_toBottomOf="@+id/no50" />
@@ -796,12 +882,14 @@
     <Button
         android:id="@+id/no61"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="61"
+        android:text="60"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no71"
+
         app:layout_constraintRight_toLeftOf="@+id/no62"
         app:layout_constraintStart_toStartOf="@id/vertical2"
         app:layout_constraintTop_toBottomOf="@+id/no51" />
@@ -809,12 +897,13 @@
     <Button
         android:id="@+id/no62"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="62"
+        android:text="61"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no72"
         app:layout_constraintLeft_toRightOf="@id/no61"
         app:layout_constraintRight_toLeftOf="@+id/no63"
         app:layout_constraintTop_toBottomOf="@+id/no52" />
@@ -822,12 +911,14 @@
     <Button
         android:id="@+id/no63"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="63"
+        android:text="62"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no73"
+
         app:layout_constraintLeft_toRightOf="@id/no62"
         app:layout_constraintRight_toLeftOf="@+id/no64"
         app:layout_constraintTop_toBottomOf="@+id/no53" />
@@ -835,12 +926,14 @@
     <Button
         android:id="@+id/no64"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="64"
+        android:text="63"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no74"
+
         app:layout_constraintLeft_toRightOf="@id/no63"
         app:layout_constraintRight_toLeftOf="@+id/no65"
         app:layout_constraintTop_toBottomOf="@+id/no54" />
@@ -848,12 +941,14 @@
     <Button
         android:id="@+id/no65"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="65"
+        android:text="64"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no75"
+
         app:layout_constraintLeft_toRightOf="@id/no64"
         app:layout_constraintRight_toLeftOf="@+id/no66"
         app:layout_constraintTop_toBottomOf="@+id/no55" />
@@ -861,12 +956,14 @@
     <Button
         android:id="@+id/no66"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="66"
+        android:text="65"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no76"
+
         app:layout_constraintLeft_toRightOf="@id/no65"
         app:layout_constraintRight_toLeftOf="@+id/no67"
         app:layout_constraintTop_toBottomOf="@+id/no56" />
@@ -874,12 +971,14 @@
     <Button
         android:id="@+id/no67"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="67"
+        android:text="66"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no77"
+
         app:layout_constraintLeft_toRightOf="@id/no66"
         app:layout_constraintRight_toLeftOf="@+id/no68"
         app:layout_constraintTop_toBottomOf="@+id/no57" />
@@ -887,12 +986,14 @@
     <Button
         android:id="@+id/no68"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="68"
+        android:text="67"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no78"
+
         app:layout_constraintLeft_toRightOf="@id/no67"
         app:layout_constraintRight_toLeftOf="@+id/no69"
         app:layout_constraintTop_toBottomOf="@+id/no58" />
@@ -900,12 +1001,14 @@
     <Button
         android:id="@+id/no69"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="69"
+        android:text="68"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no79"
+
         app:layout_constraintLeft_toRightOf="@id/no68"
         app:layout_constraintRight_toLeftOf="@+id/no70"
         app:layout_constraintTop_toBottomOf="@+id/no59" />
@@ -913,12 +1016,14 @@
     <Button
         android:id="@+id/no70"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="70"
+        android:text="69"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no80"
+
         app:layout_constraintEnd_toEndOf="@id/vertical1"
         app:layout_constraintLeft_toRightOf="@id/no69"
         app:layout_constraintTop_toBottomOf="@+id/no60" />
@@ -927,12 +1032,13 @@
     <Button
         android:id="@+id/no71"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="71"
+        android:text="70"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no81"
         app:layout_constraintRight_toLeftOf="@+id/no72"
         app:layout_constraintStart_toStartOf="@id/vertical2"
         app:layout_constraintTop_toBottomOf="@+id/no61" />
@@ -940,12 +1046,13 @@
     <Button
         android:id="@+id/no72"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="72"
+        android:text="71"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no82"
         app:layout_constraintLeft_toRightOf="@id/no71"
         app:layout_constraintRight_toLeftOf="@+id/no73"
         app:layout_constraintTop_toBottomOf="@+id/no62" />
@@ -953,12 +1060,13 @@
     <Button
         android:id="@+id/no73"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="73"
+        android:text="72"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no83"
         app:layout_constraintLeft_toRightOf="@id/no72"
         app:layout_constraintRight_toLeftOf="@+id/no74"
         app:layout_constraintTop_toBottomOf="@+id/no63" />
@@ -966,12 +1074,14 @@
     <Button
         android:id="@+id/no74"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="74"
+        android:text="73"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no84"
+
         app:layout_constraintLeft_toRightOf="@id/no73"
         app:layout_constraintRight_toLeftOf="@+id/no75"
         app:layout_constraintTop_toBottomOf="@+id/no64" />
@@ -979,12 +1089,14 @@
     <Button
         android:id="@+id/no75"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="75"
+        android:text="74"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no85"
+
         app:layout_constraintLeft_toRightOf="@id/no74"
         app:layout_constraintRight_toLeftOf="@+id/no76"
         app:layout_constraintTop_toBottomOf="@+id/no65" />
@@ -992,12 +1104,14 @@
     <Button
         android:id="@+id/no76"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="76"
+        android:text="75"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no86"
+
         app:layout_constraintLeft_toRightOf="@id/no75"
         app:layout_constraintRight_toLeftOf="@+id/no77"
         app:layout_constraintTop_toBottomOf="@+id/no66" />
@@ -1005,12 +1119,14 @@
     <Button
         android:id="@+id/no77"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="77"
+        android:text="76"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no87"
+
         app:layout_constraintLeft_toRightOf="@id/no76"
         app:layout_constraintRight_toLeftOf="@+id/no78"
         app:layout_constraintTop_toBottomOf="@+id/no67" />
@@ -1018,12 +1134,14 @@
     <Button
         android:id="@+id/no78"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="78"
+        android:text="77"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no88"
+
         app:layout_constraintLeft_toRightOf="@id/no77"
         app:layout_constraintRight_toLeftOf="@+id/no79"
         app:layout_constraintTop_toBottomOf="@+id/no68" />
@@ -1031,12 +1149,14 @@
     <Button
         android:id="@+id/no79"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="79"
+        android:text="78"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no89"
+
         app:layout_constraintLeft_toRightOf="@id/no78"
         app:layout_constraintRight_toLeftOf="@+id/no80"
         app:layout_constraintTop_toBottomOf="@+id/no69" />
@@ -1044,12 +1164,14 @@
     <Button
         android:id="@+id/no80"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="80"
+        android:text="79"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no90"
+
         app:layout_constraintEnd_toEndOf="@id/vertical1"
         app:layout_constraintLeft_toRightOf="@id/no79"
         app:layout_constraintTop_toBottomOf="@+id/no70" />
@@ -1057,12 +1179,13 @@
     <Button
         android:id="@+id/no81"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="81"
+        android:text="80"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no91"
         app:layout_constraintRight_toLeftOf="@+id/no82"
         app:layout_constraintStart_toStartOf="@id/vertical2"
         app:layout_constraintTop_toBottomOf="@+id/no71" />
@@ -1070,12 +1193,13 @@
     <Button
         android:id="@+id/no82"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="82"
+        android:text="81"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no92"
         app:layout_constraintLeft_toRightOf="@id/no81"
         app:layout_constraintRight_toLeftOf="@+id/no83"
         app:layout_constraintTop_toBottomOf="@+id/no72" />
@@ -1083,12 +1207,13 @@
     <Button
         android:id="@+id/no83"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="83"
+        android:text="82"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no93"
         app:layout_constraintLeft_toRightOf="@id/no82"
         app:layout_constraintRight_toLeftOf="@+id/no84"
         app:layout_constraintTop_toBottomOf="@+id/no73" />
@@ -1096,12 +1221,13 @@
     <Button
         android:id="@+id/no84"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="84"
+        android:text="83"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no94"
         app:layout_constraintLeft_toRightOf="@id/no83"
         app:layout_constraintRight_toLeftOf="@+id/no85"
         app:layout_constraintTop_toBottomOf="@+id/no74" />
@@ -1109,12 +1235,13 @@
     <Button
         android:id="@+id/no85"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="85"
+        android:text="84"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no95"
         app:layout_constraintLeft_toRightOf="@id/no84"
         app:layout_constraintRight_toLeftOf="@+id/no86"
         app:layout_constraintTop_toBottomOf="@+id/no75" />
@@ -1122,12 +1249,13 @@
     <Button
         android:id="@+id/no86"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="86"
+        android:text="85"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no96"
         app:layout_constraintLeft_toRightOf="@id/no85"
         app:layout_constraintRight_toLeftOf="@+id/no87"
         app:layout_constraintTop_toBottomOf="@+id/no76" />
@@ -1135,12 +1263,13 @@
     <Button
         android:id="@+id/no87"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="87"
+        android:text="86"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no97"
         app:layout_constraintLeft_toRightOf="@id/no86"
         app:layout_constraintRight_toLeftOf="@+id/no88"
         app:layout_constraintTop_toBottomOf="@+id/no77" />
@@ -1148,12 +1277,13 @@
     <Button
         android:id="@+id/no88"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="88"
+        android:text="87"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no98"
         app:layout_constraintLeft_toRightOf="@id/no87"
         app:layout_constraintRight_toLeftOf="@+id/no89"
         app:layout_constraintTop_toBottomOf="@+id/no78" />
@@ -1161,12 +1291,13 @@
     <Button
         android:id="@+id/no89"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="89"
+        android:text="88"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no99"
         app:layout_constraintLeft_toRightOf="@id/no88"
         app:layout_constraintRight_toLeftOf="@+id/no90"
         app:layout_constraintTop_toBottomOf="@+id/no79" />
@@ -1174,12 +1305,13 @@
     <Button
         android:id="@+id/no90"
         android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_height="0dp"
         android:background="@drawable/gold_square"
-        android:text="90"
+        android:text="89"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/no100"
         app:layout_constraintEnd_toEndOf="@id/vertical1"
         app:layout_constraintLeft_toRightOf="@id/no89"
         app:layout_constraintTop_toBottomOf="@+id/no80" />
@@ -1189,114 +1321,123 @@
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:background="@drawable/gold_square"
-        android:text="91"
+        android:text="90"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/no92"
         app:layout_constraintStart_toStartOf="@id/vertical2"
         app:layout_constraintTop_toBottomOf="@+id/no81" />
 
     <Button
         android:id="@+id/no92"
-        android:layout_width="35dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
         android:background="@drawable/gold_square"
-        android:text="92"
+        android:text="91"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/no91"
         app:layout_constraintRight_toLeftOf="@+id/no93"
         app:layout_constraintTop_toBottomOf="@+id/no82" />
 
     <Button
         android:id="@+id/no93"
-        android:layout_width="35dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
         android:background="@drawable/gold_square"
-        android:text="93"
+        android:text="92"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/no92"
         app:layout_constraintRight_toLeftOf="@+id/no94"
         app:layout_constraintTop_toBottomOf="@+id/no83" />
 
     <Button
         android:id="@+id/no94"
-        android:layout_width="35dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
         android:background="@drawable/gold_square"
-        android:text="94"
+        android:text="93"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/no93"
         app:layout_constraintRight_toLeftOf="@+id/no95"
         app:layout_constraintTop_toBottomOf="@+id/no84" />
 
     <Button
         android:id="@+id/no95"
-        android:layout_width="35dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
         android:background="@drawable/gold_square"
-        android:text="95"
+        android:text="94"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/no94"
         app:layout_constraintRight_toLeftOf="@+id/no96"
         app:layout_constraintTop_toBottomOf="@+id/no85" />
 
     <Button
         android:id="@+id/no96"
-        android:layout_width="35dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
         android:background="@drawable/gold_square"
-        android:text="96"
+        android:text="95"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/no95"
         app:layout_constraintRight_toLeftOf="@+id/no97"
         app:layout_constraintTop_toBottomOf="@+id/no86" />
 
     <Button
         android:id="@+id/no97"
-        android:layout_width="35dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
         android:background="@drawable/gold_square"
-        android:text="97"
+        android:text="96"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/no96"
         app:layout_constraintRight_toLeftOf="@+id/no98"
         app:layout_constraintTop_toBottomOf="@+id/no87" />
 
     <Button
         android:id="@+id/no98"
-        android:layout_width="35dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
         android:background="@drawable/gold_square"
-        android:text="98"
+        android:text="97"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/no97"
         app:layout_constraintRight_toLeftOf="@+id/no99"
         app:layout_constraintTop_toBottomOf="@+id/no88" />
 
     <Button
         android:id="@+id/no99"
-        android:layout_width="35dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
         android:background="@drawable/gold_square"
-        android:text="99"
+        android:text="98"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/no98"
         app:layout_constraintRight_toLeftOf="@+id/no100"
         app:layout_constraintTop_toBottomOf="@+id/no89" />
@@ -1306,10 +1447,11 @@
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:background="@drawable/gold_square"
-        android:text="100"
+        android:text="99"
         android:textColor="@color/colorText"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/vertical1"
         app:layout_constraintLeft_toRightOf="@id/no99"
         app:layout_constraintTop_toBottomOf="@+id/no90" />
@@ -1319,28 +1461,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="675dp" />
+        app:layout_constraintGuide_percent="0.95" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vertical2"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="325dp" />
+        app:layout_constraintGuide_percent="0.41" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/horizontal1"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="358dp" />
+        app:layout_constraintGuide_percent="0.03892944" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
+        android:id="@+id/horizontal_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="398dp" />
+        app:layout_constraintGuide_percent="0.92" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"

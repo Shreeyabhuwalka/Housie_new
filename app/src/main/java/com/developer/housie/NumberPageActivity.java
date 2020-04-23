@@ -223,7 +223,7 @@ public class NumberPageActivity extends AppCompatActivity implements View.OnClic
 //        mButton[69].setOnClickListener(this);
         index = 0;
 
-        for (int i=1; i<=100; i++) {
+        for (int i=0; i<=99; i++) {
             list.add(new Integer(i));
         }
         Collections.shuffle(list);
@@ -246,7 +246,7 @@ public class NumberPageActivity extends AppCompatActivity implements View.OnClic
                 displayText.setText(String.valueOf(random_number));
                 displayText.startAnimation(rotate);
 //                mButton[random_number-1].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
-                mButton[random_number-1].setTextColor(getResources().getColor(R.color.colorFalseButton));
+                mButton[random_number].setTextColor(getResources().getColor(R.color.colorFalseButton));
                 index++;
 
                 if(index==0)

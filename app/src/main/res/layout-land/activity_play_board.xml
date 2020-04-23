@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout2"
@@ -7,6 +8,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/woden2"
     tools:context=".PlayBoardActivity">
+
     <Button
         android:id="@+id/btn_one"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
@@ -18,6 +20,7 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn2_one"
         app:layout_constraintRight_toLeftOf="@id/btn_two"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/horizontal" />
@@ -25,13 +28,16 @@
     <Button
         android:id="@+id/btn_two"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
+
         android:fontFamily="monospace"
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn2_two"
+
         app:layout_constraintLeft_toRightOf="@+id/btn_one"
         app:layout_constraintRight_toLeftOf="@id/btn_three"
         app:layout_constraintTop_toTopOf="@+id/horizontal" />
@@ -39,7 +45,7 @@
     <Button
         android:id="@+id/btn_three"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
 
         android:background="@drawable/flowerf"
@@ -47,6 +53,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn2_three"
+
         app:layout_constraintLeft_toRightOf="@+id/btn_two"
         app:layout_constraintRight_toLeftOf="@id/btn_four"
         app:layout_constraintTop_toTopOf="@+id/horizontal" />
@@ -54,7 +62,7 @@
     <Button
         android:id="@+id/btn_four"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
 
@@ -62,6 +70,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn2_four"
+
         app:layout_constraintLeft_toRightOf="@+id/btn_three"
         app:layout_constraintRight_toLeftOf="@id/btn_five"
         app:layout_constraintTop_toTopOf="@+id/horizontal" />
@@ -69,7 +79,7 @@
     <Button
         android:id="@+id/btn_five"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
 
@@ -78,6 +88,8 @@
         android:textSize="25sp"
 
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn2_five"
+
         app:layout_constraintLeft_toRightOf="@+id/btn_four"
         app:layout_constraintRight_toLeftOf="@id/btn_six"
         app:layout_constraintTop_toTopOf="@+id/horizontal" />
@@ -85,7 +97,7 @@
     <Button
         android:id="@+id/btn_six"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
 
@@ -93,6 +105,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn2_six"
+
         app:layout_constraintLeft_toRightOf="@+id/btn_five"
         app:layout_constraintRight_toLeftOf="@id/btn_seven"
         app:layout_constraintTop_toTopOf="@+id/horizontal" />
@@ -100,7 +114,7 @@
     <Button
         android:id="@+id/btn_seven"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
 
@@ -108,6 +122,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn2_seven"
+
         app:layout_constraintLeft_toRightOf="@+id/btn_six"
         app:layout_constraintRight_toLeftOf="@id/btn_eight"
         app:layout_constraintTop_toTopOf="@+id/horizontal" />
@@ -115,7 +131,7 @@
     <Button
         android:id="@+id/btn_eight"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
 
@@ -123,6 +139,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn2_eight"
+
         app:layout_constraintLeft_toRightOf="@+id/btn_seven"
         app:layout_constraintRight_toLeftOf="@id/btn_nine"
         app:layout_constraintTop_toTopOf="@+id/horizontal" />
@@ -138,6 +156,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn2_nine"
+
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintLeft_toRightOf="@+id/btn_eight"
         app:layout_constraintTop_toTopOf="@+id/horizontal" />
@@ -153,6 +173,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn3_one"
+
         app:layout_constraintRight_toLeftOf="@id/btn2_two"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/btn_one" />
@@ -160,7 +182,7 @@
     <Button
         android:id="@+id/btn2_two"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
 
         android:background="@drawable/flowerf"
@@ -168,6 +190,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn3_two"
+
         app:layout_constraintLeft_toRightOf="@+id/btn2_one"
         app:layout_constraintRight_toLeftOf="@id/btn2_three"
         app:layout_constraintTop_toBottomOf="@+id/btn_two" />
@@ -175,7 +199,7 @@
     <Button
         android:id="@+id/btn2_three"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
 
@@ -183,6 +207,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn3_three"
+
         app:layout_constraintLeft_toRightOf="@+id/btn2_two"
         app:layout_constraintRight_toLeftOf="@id/btn2_four"
         app:layout_constraintTop_toBottomOf="@+id/btn_three" />
@@ -190,7 +216,7 @@
     <Button
         android:id="@+id/btn2_four"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
 
@@ -199,6 +225,8 @@
         android:textSize="25sp"
 
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn3_four"
+
         app:layout_constraintLeft_toRightOf="@+id/btn2_three"
         app:layout_constraintRight_toLeftOf="@id/btn2_five"
         app:layout_constraintTop_toBottomOf="@+id/btn_four" />
@@ -206,7 +234,7 @@
     <Button
         android:id="@+id/btn2_five"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
 
@@ -214,6 +242,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn3_five"
+
         app:layout_constraintLeft_toRightOf="@+id/btn2_four"
         app:layout_constraintRight_toLeftOf="@id/btn2_six"
         app:layout_constraintTop_toBottomOf="@+id/btn_five" />
@@ -221,7 +251,7 @@
     <Button
         android:id="@+id/btn2_six"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
 
@@ -229,6 +259,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn3_six"
+
         app:layout_constraintLeft_toRightOf="@+id/btn2_five"
         app:layout_constraintRight_toLeftOf="@id/btn2_seven"
         app:layout_constraintTop_toBottomOf="@+id/btn_six" />
@@ -236,7 +268,7 @@
     <Button
         android:id="@+id/btn2_seven"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
 
@@ -244,6 +276,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn3_seven"
+
         app:layout_constraintLeft_toRightOf="@+id/btn2_six"
         app:layout_constraintRight_toLeftOf="@id/btn2_eight"
         app:layout_constraintTop_toBottomOf="@+id/btn_seven" />
@@ -251,7 +285,7 @@
     <Button
         android:id="@+id/btn2_eight"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/flowerf"
 
@@ -259,6 +293,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn3_eight"
+
         app:layout_constraintLeft_toRightOf="@+id/btn2_seven"
         app:layout_constraintRight_toLeftOf="@id/btn2_nine"
         app:layout_constraintTop_toBottomOf="@+id/btn_eight" />
@@ -274,6 +310,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn3_nine"
+
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintLeft_toRightOf="@+id/btn2_eight"
         app:layout_constraintTop_toBottomOf="@+id/btn_nine" />
@@ -289,6 +327,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/horizontl2"
+
         app:layout_constraintRight_toLeftOf="@id/btn3_two"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/btn2_one" />
@@ -296,7 +336,7 @@
     <Button
         android:id="@+id/btn3_two"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
 
         android:background="@drawable/flowerf"
@@ -304,6 +344,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/horizontl2"
         app:layout_constraintLeft_toRightOf="@+id/btn3_one"
         app:layout_constraintRight_toLeftOf="@id/btn3_three"
         app:layout_constraintTop_toBottomOf="@+id/btn2_two" />
@@ -311,7 +353,7 @@
     <Button
         android:id="@+id/btn3_three"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
 
         android:background="@drawable/flowerf"
@@ -319,6 +361,8 @@
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/horizontl2"
         app:layout_constraintLeft_toRightOf="@+id/btn3_two"
         app:layout_constraintRight_toLeftOf="@id/btn3_four"
         app:layout_constraintTop_toBottomOf="@+id/btn2_three" />
@@ -326,7 +370,7 @@
     <Button
         android:id="@+id/btn3_four"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
 
         android:background="@drawable/flowerf"
@@ -335,6 +379,8 @@
 
         android:textSize="25sp"
         android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/horizontl2"
         app:layout_constraintLeft_toRightOf="@+id/btn3_three"
         app:layout_constraintRight_toLeftOf="@id/btn3_five"
         app:layout_constraintTop_toBottomOf="@+id/btn2_four" />
@@ -342,7 +388,7 @@
     <Button
         android:id="@+id/btn3_five"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
 
         android:background="@drawable/flowerf"
@@ -351,6 +397,8 @@
 
         android:textSize="25sp"
         android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/horizontl2"
         app:layout_constraintLeft_toRightOf="@+id/btn3_four"
         app:layout_constraintRight_toLeftOf="@id/btn3_six"
         app:layout_constraintTop_toBottomOf="@+id/btn2_five" />
@@ -358,7 +406,7 @@
     <Button
         android:id="@+id/btn3_six"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
 
         android:background="@drawable/flowerf"
@@ -367,6 +415,8 @@
 
         android:textSize="25sp"
         android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/horizontl2"
         app:layout_constraintLeft_toRightOf="@+id/btn3_five"
         app:layout_constraintRight_toLeftOf="@id/btn3_seven"
         app:layout_constraintTop_toBottomOf="@+id/btn2_six" />
@@ -374,7 +424,7 @@
     <Button
         android:id="@+id/btn3_seven"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
 
         android:background="@drawable/flowerf"
@@ -383,6 +433,8 @@
 
         android:textSize="25sp"
         android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/horizontl2"
         app:layout_constraintLeft_toRightOf="@+id/btn3_six"
         app:layout_constraintRight_toLeftOf="@id/btn3_eight"
         app:layout_constraintTop_toBottomOf="@+id/btn2_seven" />
@@ -390,7 +442,7 @@
     <Button
         android:id="@+id/btn3_eight"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
-        android:layout_width="75dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
 
         android:background="@drawable/flowerf"
@@ -399,6 +451,8 @@
 
         android:textSize="25sp"
         android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/horizontl2"
         app:layout_constraintLeft_toRightOf="@+id/btn3_seven"
         app:layout_constraintRight_toLeftOf="@id/btn3_nine"
         app:layout_constraintTop_toBottomOf="@+id/btn2_eight" />
@@ -415,6 +469,9 @@
 
         android:textSize="25sp"
         android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/horizontl2"
+
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintLeft_toRightOf="@+id/btn3_eight"
         app:layout_constraintTop_toBottomOf="@+id/btn2_nine" />
@@ -425,20 +482,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.07" />
+        app:layout_constraintGuide_percent="0.04" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.93" />
+        app:layout_constraintGuide_percent="0.96" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.19" />
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

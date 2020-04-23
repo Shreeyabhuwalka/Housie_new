@@ -5,7 +5,6 @@
         android:color="@color/colorTrueButton" />
 
 
-
     <stroke android:width="15px" android:color="#8B008B" />
 
 </shape>
