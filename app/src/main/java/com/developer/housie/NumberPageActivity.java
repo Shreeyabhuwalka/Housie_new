@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -144,6 +146,7 @@ public class NumberPageActivity extends AppCompatActivity implements View.OnClic
 
 
 
+
 //        mButton[0].setOnClickListener(this);
 //        mButton[1].setOnClickListener(this);
 //        mButton[2].setOnClickListener(this);
@@ -229,9 +232,19 @@ public class NumberPageActivity extends AppCompatActivity implements View.OnClic
         randomPop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Animation shake;
+                shake = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.shake);
+
+                ImageView image;
+                image = (ImageView) findViewById(R.id.randomPopup);
+
+                image.startAnimation(shake);
                 int random_number;
                 random_number = list.get(index);
+                Animation rotate;
+                rotate=AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate_clockwise);
                 displayText.setText(String.valueOf(random_number));
+                displayText.startAnimation(rotate);
 //                mButton[random_number-1].setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
                 mButton[random_number-1].setTextColor(getResources().getColor(R.color.colorFalseButton));
                 index++;
@@ -250,7 +263,7 @@ public class NumberPageActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View view) {
 
 
-        view.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+        view.animate().rotation(1800).setDuration(1000);;
 
     }
 }

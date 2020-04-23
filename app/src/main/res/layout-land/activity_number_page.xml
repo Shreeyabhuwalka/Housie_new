@@ -1333,14 +1333,14 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="381dp" />
+        app:layout_constraintGuide_end="358dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="375dp" />
+        app:layout_constraintGuide_begin="398dp" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
@@ -1350,40 +1350,49 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="222dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        app:layout_constraintEnd_toStartOf="@+id/vertical2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="221dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
         app:layout_constraintBottom_toTopOf="@+id/randomPopup"
+        app:layout_constraintEnd_toStartOf="@+id/vertical2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/horizontal1"
         app:srcCompat="@drawable/header" />
 
     <ImageView
         android:id="@+id/randomPopup"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toStartOf="@+id/vertical2"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="227dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/vertical2"
 
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/gold_square" />
+        app:srcCompat="@drawable/jar" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Number"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/coin"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@android:color/white"
-        android:textSize="50sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/vertical2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/randomPopup" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
