@@ -38,7 +38,7 @@
         app:layout_constraintEnd_toStartOf="@+id/vertical_guide1"
         app:layout_constraintStart_toStartOf="@+id/vertical_guide2"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/logo" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vertical_guide1"
