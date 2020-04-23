@@ -19,26 +19,7 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 
 public class PlayBoardActivity extends AppCompatActivity implements View.OnClickListener {
 
-//    Button btn_random;
     Button buttons[] = new Button[27];
-
-
-//    Button btn_random1;
-//    Button btn_random2;
-//    Button btn_random3;
-//    Button btn_random4;
-//    Button btn_random5;
-//    Button btn_random6;
-//    Button btn_random7;
-//    Button btn_random8;
-//    Button btn_random9;
-//    Button btn_random10;
-//    Button btn_random11;
-//    Button btn_random12;
-//    Button btn_random13;
-//    Button btn_random14;
-//    Button btn_random15;
-
 
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
@@ -47,9 +28,6 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
 
         setContentView(R.layout.activity_play_board);
 //        setRequestedOrientation (SCREEN_ORIENTATION_LANDSCAPE);
-
-//        btn_random = (Button) findViewById(R.id.random_btn_id);
-
 
         buttons[0] = (Button) findViewById(R.id.btn_one);
         buttons[1] = (Button) findViewById(R.id.btn_two);
@@ -79,7 +57,6 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
         buttons[25] = (Button) findViewById(R.id.btn3_eight);
         buttons[26] = (Button) findViewById(R.id.btn3_nine);
 
-
         randomNumberCreation();
 
         buttons[0].setOnClickListener(this);
@@ -92,7 +69,6 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
         buttons[7].setOnClickListener(this);
         buttons[8].setOnClickListener(this);
         buttons[9].setOnClickListener(this);
-
         buttons[10].setOnClickListener(this);
         buttons[11].setOnClickListener(this);
         buttons[12].setOnClickListener(this);
@@ -103,7 +79,6 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
         buttons[17].setOnClickListener(this);
         buttons[18].setOnClickListener(this);
         buttons[19].setOnClickListener(this);
-
         buttons[20].setOnClickListener(this);
         buttons[21].setOnClickListener(this);
         buttons[22].setOnClickListener(this);
@@ -112,18 +87,17 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
         buttons[25].setOnClickListener(this);
         buttons[26].setOnClickListener(this);
     }
+
     public void randomNumberCreation() {
         ArrayList<Integer> list = new ArrayList<Integer>();
         for (int i=1; i<=100; i++) {
             list.add(new Integer(i));
         }
         Collections.shuffle(list);
-
         Random val = new Random();
         int m = 0,random;
         for (int k = 0; k < 19; k += 9) {
             int a[] = {1, 1, 1, 1, 1, 1, 1, 1, 1};
-
             for (int i = 1; i <= 5; i++) {
                 do {
                     random= val.nextInt(9) + k; // [0, 8] + k => [k,k+[9]]
@@ -135,14 +109,14 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
         }
         for (int i=0; i<10; i++) {
             System.out.println(list.get(i));
-
         }
     }
 
     @Override
     public void onClick(View view) {
 
-        view.setBackgroundColor(getResources().getColor(R.color.colorFalseButton));
+        Button btn = (Button) view;
+        btn.setTextColor(getResources().getColor(R.color.colorFalseButton));
 
     }
 }
