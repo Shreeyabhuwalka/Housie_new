@@ -1333,7 +1333,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="16dp" />
+        app:layout_constraintGuide_end="381dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
