@@ -4,6 +4,6 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colorText">#ecf0f1</color>
-    <color name="colorTrueButton">#27ae60</color>
+    <color name="colorTrueButton">#000000</color>
     <color name="colorFalseButton">#c0392b</color>
 </resources>

@@ -6,6 +6,9 @@ import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Paint;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -119,15 +122,27 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
         public void onClick(View view) {
 
             Button btn = (Button) view;
-            btn.setTextColor(getResources().getColor(R.color.colorFalseButton));
-
+        if((btn.getText() != "") && (btn.getCurrentTextColor() != getResources().getColor(R.color.colorFalseButton))) {
             fullHouse++;
+        }
+        if(btn.getCurrentTextColor() == getResources().getColor(R.color.colorFalseButton))
+        {
+            fullHouse--;
+            btn.setTextColor(getResources().getColor(R.color.colorTrueButton));
+            btn.setPaintFlags(Paint.DEV_KERN_TEXT_FLAG);
+        }
+        else
+        {
+            btn.setTextColor(getResources().getColor(R.color.colorFalseButton));
+            btn.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+
+        }
             if(fullHouse==15)
             {
                 AlertDialog.Builder alert = new AlertDialog.Builder(this);
-                alert.setTitle("Full House");
+                alert.setTitle("You got full house!");
                 //cancelable help to remove alert box by clicking outside the alert box. By seting it to false we r nt allowing to disable alert
-                alert.setMessage("You got full house");
+//                alert.setMessage("You got full house");
                 alert.setPositiveButton("End Game", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
