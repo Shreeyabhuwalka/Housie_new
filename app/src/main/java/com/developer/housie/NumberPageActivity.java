@@ -3,7 +3,11 @@ package com.developer.housie;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -24,6 +28,7 @@ public class NumberPageActivity extends AppCompatActivity implements View.OnClic
     ArrayList<Integer> list = new ArrayList<Integer>();
     int index;
     Button mButton[] = new Button[100];
+
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +36,7 @@ public class NumberPageActivity extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.activity_number_page);
 //        setRequestedOrientation (SCREEN_ORIENTATION_LANDSCAPE);
 
-
+        final AlertDialog.Builder alert = new AlertDialog.Builder(this);
         randomPop = (ImageView) findViewById(R.id.randomPopup);
         displayText = (TextView)findViewById(R.id.textView);
         mButton[0] = (Button) findViewById(R.id.one);
@@ -249,9 +254,22 @@ public class NumberPageActivity extends AppCompatActivity implements View.OnClic
                 mButton[random_number].setTextColor(getResources().getColor(R.color.colorFalseButton));
                 index++;
 
-                if(index==0)
+                if(index>=100)
                 {
-                    finish();
+                    alert.setTitle("All 100 numbers selected!");
+                    //cancelable help to remove alert box by clicking outside the alert box. By seting it to false we r nt allowing to disable alert
+                    // alert.setMessage("You got full house");
+                    alert.setCancelable(false);
+                    alert.setPositiveButton("End Game", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent intent=new  Intent(NumberPageActivity.this,MainActivity.class);
+                            startActivity(intent);
+                        }
+                    });
+                    alert.show();
+                    Log.i("Msg","I am out");
+
                 }
             }
         });

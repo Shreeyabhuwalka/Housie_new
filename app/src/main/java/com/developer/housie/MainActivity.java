@@ -15,6 +15,7 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 public class MainActivity extends AppCompatActivity {
     Button number_btn;
     Button play_button;
+    Button rule_button;
     ImageView logo;
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         logo.animate().scaleX(1.0f).scaleY(1.0f).setDuration(1000);
         number_btn = (Button)findViewById(R.id.num_btn);
         play_button = (Button) findViewById(R.id.play_btn);
+        rule_button = (Button) findViewById(R.id.rule_btn);
 
         number_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new  Intent(MainActivity.this,PlayBoardActivity.class);
+                startActivity(intent);
+            }
+        });
+        rule_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new  Intent(MainActivity.this,Rules.class);
                 startActivity(intent);
             }
         });

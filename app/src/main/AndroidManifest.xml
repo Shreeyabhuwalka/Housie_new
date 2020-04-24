@@ -10,13 +10,19 @@
         android:roundIcon="@mipmap/launcher_icon_new2_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PlayBoardActivity"
+        <activity android:name=".Rules"
             android:screenOrientation="landscape"
             tools:ignore="LockedOrientationActivity"></activity>
-        <activity android:name=".NumberPageActivity"
+        <activity
+            android:name=".PlayBoardActivity"
             android:screenOrientation="landscape"
             tools:ignore="LockedOrientationActivity" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".NumberPageActivity"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="landscape"
             tools:ignore="LockedOrientationActivity">
             <intent-filter>

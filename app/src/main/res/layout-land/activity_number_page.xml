@@ -15,7 +15,7 @@
 
     <Button
         android:id="@+id/one"
-        android:layout_width="0dp"
+        android:layout_width="35dp"
         android:layout_height="0dp"
         android:background="@drawable/gold_square"
         android:text="0"
@@ -156,7 +156,7 @@
 
     <Button
         android:id="@+id/no11"
-        android:layout_width="0dp"
+        android:layout_width="35dp"
         android:layout_height="0dp"
         android:background="@drawable/gold_square"
         android:text="10"
@@ -299,7 +299,7 @@
 
     <Button
         android:id="@+id/no21"
-        android:layout_width="0dp"
+        android:layout_width="35dp"
         android:layout_height="0dp"
         android:background="@drawable/gold_square"
         android:text="20"
@@ -443,7 +443,7 @@
 
     <Button
         android:id="@+id/no31"
-        android:layout_width="0dp"
+        android:layout_width="35dp"
         android:layout_height="0dp"
         android:background="@drawable/gold_square"
         android:text="30"
@@ -591,7 +591,7 @@
 
     <Button
         android:id="@+id/no41"
-        android:layout_width="0dp"
+        android:layout_width="35dp"
         android:layout_height="0dp"
         android:background="@drawable/gold_square"
         android:text="40"
@@ -740,7 +740,7 @@
 
     <Button
         android:id="@+id/no51"
-        android:layout_width="0dp"
+        android:layout_width="35dp"
         android:layout_height="0dp"
         android:background="@drawable/gold_square"
         android:text="50"
@@ -881,7 +881,7 @@
 
     <Button
         android:id="@+id/no61"
-        android:layout_width="0dp"
+        android:layout_width="35dp"
         android:layout_height="0dp"
         android:background="@drawable/gold_square"
         android:text="60"
@@ -1031,7 +1031,7 @@
 
     <Button
         android:id="@+id/no71"
-        android:layout_width="0dp"
+        android:layout_width="35dp"
         android:layout_height="0dp"
         android:background="@drawable/gold_square"
         android:text="70"
@@ -1178,7 +1178,7 @@
 
     <Button
         android:id="@+id/no81"
-        android:layout_width="0dp"
+        android:layout_width="35dp"
         android:layout_height="0dp"
         android:background="@drawable/gold_square"
         android:text="80"
@@ -1318,7 +1318,7 @@
 
     <Button
         android:id="@+id/no91"
-        android:layout_width="0dp"
+        android:layout_width="35dp"
         android:layout_height="0dp"
         android:background="@drawable/gold_square"
         android:text="90"
@@ -1468,7 +1468,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.42" />
+        app:layout_constraintGuide_percent="0.39" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/horizontal1"
@@ -1492,12 +1492,9 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="221dp"
+        android:layout_width="0dp"
         android:layout_height="53dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginLeft="53dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginRight="53dp"
+
         app:layout_constraintBottom_toTopOf="@+id/randomPopup"
         app:layout_constraintEnd_toStartOf="@+id/vertical2"
         app:layout_constraintStart_toStartOf="parent"
@@ -1508,10 +1505,9 @@
         android:id="@+id/randomPopup"
         android:layout_width="227dp"
         android:layout_height="175dp"
-        android:layout_marginTop="8dp"
+
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/vertical2"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/jar" />
@@ -1520,17 +1516,14 @@
         android:id="@+id/textView"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginRight="120dp"
         android:background="@drawable/coin"
         android:gravity="center"
+        android:layout_marginBottom="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/vertical2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/randomPopup" />

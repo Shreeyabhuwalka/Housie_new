@@ -3,6 +3,8 @@ package com.developer.housie;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,6 +23,7 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
 
     Button buttons[] = new Button[27];
 
+    int fullHouse = 0;
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,7 +93,7 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
 
     public void randomNumberCreation() {
         ArrayList<Integer> list = new ArrayList<Integer>();
-        for (int i=1; i<=100; i++) {
+        for (int i=0; i<=99; i++) {
             list.add(new Integer(i));
         }
         Collections.shuffle(list);
@@ -113,12 +116,28 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
     }
 
     @Override
-    public void onClick(View view) {
+        public void onClick(View view) {
 
-        Button btn = (Button) view;
-        btn.setTextColor(getResources().getColor(R.color.colorFalseButton));
+            Button btn = (Button) view;
+            btn.setTextColor(getResources().getColor(R.color.colorFalseButton));
 
-    }
+            fullHouse++;
+            if(fullHouse==15)
+            {
+                AlertDialog.Builder alert = new AlertDialog.Builder(this);
+                alert.setTitle("Full House");
+                //cancelable help to remove alert box by clicking outside the alert box. By seting it to false we r nt allowing to disable alert
+                alert.setMessage("You got full house");
+                alert.setPositiveButton("End Game", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        finish();
+                    }
+                });
+                alert.show();
+            }
+
+        }
 }
 
 

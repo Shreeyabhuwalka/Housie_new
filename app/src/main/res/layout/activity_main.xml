@@ -8,6 +8,20 @@
     android:background="@drawable/background">
 
     <Button
+        android:id="@+id/rule_btn"
+        android:layout_width="135dp"
+        android:layout_height="85dp"
+
+        android:background="@drawable/image_button"
+        android:text="Rule"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_guide1"
+
+        app:layout_constraintLeft_toRightOf="@+id/play_btn"/>
+
+    <Button
         android:id="@+id/num_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,6 +31,7 @@
         android:layout_marginEnd="160dp"
         android:layout_marginRight="160dp"
         android:text="@string/number_page"
+        android:visibility="gone"
         app:layout_constraintEnd_toStartOf="@+id/play_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,6 +45,7 @@
         android:layout_marginRight="44dp"
         android:layout_marginBottom="340dp"
         android:text="@string/play_page"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

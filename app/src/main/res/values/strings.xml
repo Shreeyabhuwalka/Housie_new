@@ -3,4 +3,19 @@
     <string name="number_page">Organiser</string>
     <string name="play_page">Player</string>
     <string name="rest">Reset Number</string>
+    <string name="Rule">In order to win in Tambola or Bingo, you need to match winning combinations. Some of the popular winning combinations in a Tambola game are given below.\n
+        \n
+        Early Five : The ticket with first five number dabbed.\n
+> Top Line: The ticket with all the numbers of the top row dabbed fastest.\n
+> Middle Line: The ticket with all the numbers of the middle row dabbed fastest.\n
+> Bottom Line: The ticket with the numbers of the bottom row dabbed fasted.\n
+> Four Corners: The ticket with all four corners marked first i.e. 1st and last numbers of top and bottom rows.\n
+> Full House: The ticket with all the 15 numbers marked first.</string>
+    <string name="intro">Tambola, also known as Tombola, Bingo or Housie is a popular game that is believed to be originated in Italy in early 1500s.
+    It is a multiplayer game with an organiser to tap the magic ball.\n
+        As a rule, each player must click on the player button to get their ticket to enter a game.
+        The game begins with the magic ball tapped by the organiser.\n
+        As the game progresses, the board is marked with each ball that is drawn.
+        The objective of the game is to mark/ dab all the numbers found in the ticket as called by the organiser.
+    </string>
 </resources>
