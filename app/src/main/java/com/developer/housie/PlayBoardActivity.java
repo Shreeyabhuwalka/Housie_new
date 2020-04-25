@@ -7,16 +7,26 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.graphics.Bitmap;
 import android.graphics.Paint;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Random;
 
@@ -25,7 +35,7 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 public class PlayBoardActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button buttons[] = new Button[27];
-
+    Button bt;
     int fullHouse = 0;
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
@@ -33,126 +43,170 @@ public class PlayBoardActivity extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_play_board);
+
+        bt = (Button) findViewById(R.id.btn_share);
+        bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bitmap bitmap = takeScreenshot();
+                saveBitmap(bitmap);
+                shareIt();
+            }
+        });
+
 //        setRequestedOrientation (SCREEN_ORIENTATION_LANDSCAPE);
 
-        buttons[0] = (Button) findViewById(R.id.btn_one);
-        buttons[1] = (Button) findViewById(R.id.btn_two);
-        buttons[2] = (Button) findViewById(R.id.btn_three);
-        buttons[3] = (Button) findViewById(R.id.btn_four);
-        buttons[4] = (Button) findViewById(R.id.btn_five);
-        buttons[5] = (Button) findViewById(R.id.btn_six);
-        buttons[6] = (Button) findViewById(R.id.btn_seven);
-        buttons[7] = (Button) findViewById(R.id.btn_eight);
-        buttons[8] = (Button) findViewById(R.id.btn_nine);
-        buttons[9] = (Button) findViewById(R.id.btn2_one);
-        buttons[10] = (Button) findViewById(R.id.btn2_two);
-        buttons[11] = (Button) findViewById(R.id.btn2_three);
-        buttons[12] = (Button) findViewById(R.id.btn2_four);
-        buttons[13] = (Button) findViewById(R.id.btn2_five);
-        buttons[14] = (Button) findViewById(R.id.btn2_six);
-        buttons[15] = (Button) findViewById(R.id.btn2_seven);
-        buttons[16] = (Button) findViewById(R.id.btn2_eight);
-        buttons[17] = (Button) findViewById(R.id.btn2_nine);
-        buttons[18] = (Button) findViewById(R.id.btn3_one);
-        buttons[19] = (Button) findViewById(R.id.btn3_two);
-        buttons[20] = (Button) findViewById(R.id.btn3_three);
-        buttons[21] = (Button) findViewById(R.id.btn3_four);
-        buttons[22] = (Button) findViewById(R.id.btn3_five);
-        buttons[23] = (Button) findViewById(R.id.btn3_six);
-        buttons[24] = (Button) findViewById(R.id.btn3_seven);
-        buttons[25] = (Button) findViewById(R.id.btn3_eight);
-        buttons[26] = (Button) findViewById(R.id.btn3_nine);
+                buttons[0] = (Button) findViewById(R.id.btn_one);
+                buttons[1] = (Button) findViewById(R.id.btn_two);
+                buttons[2] = (Button) findViewById(R.id.btn_three);
+                buttons[3] = (Button) findViewById(R.id.btn_four);
+                buttons[4] = (Button) findViewById(R.id.btn_five);
+                buttons[5] = (Button) findViewById(R.id.btn_six);
+                buttons[6] = (Button) findViewById(R.id.btn_seven);
+                buttons[7] = (Button) findViewById(R.id.btn_eight);
+                buttons[8] = (Button) findViewById(R.id.btn_nine);
+                buttons[9] = (Button) findViewById(R.id.btn2_one);
+                buttons[10] = (Button) findViewById(R.id.btn2_two);
+                buttons[11] = (Button) findViewById(R.id.btn2_three);
+                buttons[12] = (Button) findViewById(R.id.btn2_four);
+                buttons[13] = (Button) findViewById(R.id.btn2_five);
+                buttons[14] = (Button) findViewById(R.id.btn2_six);
+                buttons[15] = (Button) findViewById(R.id.btn2_seven);
+                buttons[16] = (Button) findViewById(R.id.btn2_eight);
+                buttons[17] = (Button) findViewById(R.id.btn2_nine);
+                buttons[18] = (Button) findViewById(R.id.btn3_one);
+                buttons[19] = (Button) findViewById(R.id.btn3_two);
+                buttons[20] = (Button) findViewById(R.id.btn3_three);
+                buttons[21] = (Button) findViewById(R.id.btn3_four);
+                buttons[22] = (Button) findViewById(R.id.btn3_five);
+                buttons[23] = (Button) findViewById(R.id.btn3_six);
+                buttons[24] = (Button) findViewById(R.id.btn3_seven);
+                buttons[25] = (Button) findViewById(R.id.btn3_eight);
+                buttons[26] = (Button) findViewById(R.id.btn3_nine);
 
-        randomNumberCreation();
+                randomNumberCreation();
 
-        buttons[0].setOnClickListener(this);
-        buttons[1].setOnClickListener(this);
-        buttons[2].setOnClickListener(this);
-        buttons[3].setOnClickListener(this);
-        buttons[4].setOnClickListener(this);
-        buttons[5].setOnClickListener(this);
-        buttons[6].setOnClickListener(this);
-        buttons[7].setOnClickListener(this);
-        buttons[8].setOnClickListener(this);
-        buttons[9].setOnClickListener(this);
-        buttons[10].setOnClickListener(this);
-        buttons[11].setOnClickListener(this);
-        buttons[12].setOnClickListener(this);
-        buttons[13].setOnClickListener(this);
-        buttons[14].setOnClickListener(this);
-        buttons[15].setOnClickListener(this);
-        buttons[16].setOnClickListener(this);
-        buttons[17].setOnClickListener(this);
-        buttons[18].setOnClickListener(this);
-        buttons[19].setOnClickListener(this);
-        buttons[20].setOnClickListener(this);
-        buttons[21].setOnClickListener(this);
-        buttons[22].setOnClickListener(this);
-        buttons[23].setOnClickListener(this);
-        buttons[24].setOnClickListener(this);
-        buttons[25].setOnClickListener(this);
-        buttons[26].setOnClickListener(this);
-    }
-
-    public void randomNumberCreation() {
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        for (int i=0; i<=99; i++) {
-            list.add(new Integer(i));
-        }
-        Collections.shuffle(list);
-        Random val = new Random();
-        int m = 0,random;
-        for (int k = 0; k < 19; k += 9) {
-            int a[] = {1, 1, 1, 1, 1, 1, 1, 1, 1};
-            for (int i = 1; i <= 5; i++) {
-                do {
-                    random= val.nextInt(9) + k; // [0, 8] + k => [k,k+[9]]
-                } while (a[random - k] == 0);
-                Log.i("Message", String.valueOf(random));
-                buttons[random].setText(String.valueOf(list.get(m++)));
-                a[random - k] = 0;
+                buttons[0].setOnClickListener(this);
+                buttons[1].setOnClickListener(this);
+                buttons[2].setOnClickListener(this);
+                buttons[3].setOnClickListener(this);
+                buttons[4].setOnClickListener(this);
+                buttons[5].setOnClickListener(this);
+                buttons[6].setOnClickListener(this);
+                buttons[7].setOnClickListener(this);
+                buttons[8].setOnClickListener(this);
+                buttons[9].setOnClickListener(this);
+                buttons[10].setOnClickListener(this);
+                buttons[11].setOnClickListener(this);
+                buttons[12].setOnClickListener(this);
+                buttons[13].setOnClickListener(this);
+                buttons[14].setOnClickListener(this);
+                buttons[15].setOnClickListener(this);
+                buttons[16].setOnClickListener(this);
+                buttons[17].setOnClickListener(this);
+                buttons[18].setOnClickListener(this);
+                buttons[19].setOnClickListener(this);
+                buttons[20].setOnClickListener(this);
+                buttons[21].setOnClickListener(this);
+                buttons[22].setOnClickListener(this);
+                buttons[23].setOnClickListener(this);
+                buttons[24].setOnClickListener(this);
+                buttons[25].setOnClickListener(this);
+                buttons[26].setOnClickListener(this);
             }
-        }
-        for (int i=0; i<10; i++) {
-            System.out.println(list.get(i));
-        }
-    }
 
-    @Override
-        public void onClick(View view) {
-
-            Button btn = (Button) view;
-        if((btn.getText() != "") && (btn.getCurrentTextColor() != getResources().getColor(R.color.colorFalseButton))) {
-            fullHouse++;
-        }
-        if(btn.getCurrentTextColor() == getResources().getColor(R.color.colorFalseButton))
-        {
-            fullHouse--;
-            btn.setTextColor(getResources().getColor(R.color.colorTrueButton));
-            btn.setPaintFlags(Paint.DEV_KERN_TEXT_FLAG);
-        }
-        else
-        {
-            btn.setTextColor(getResources().getColor(R.color.colorFalseButton));
-            btn.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
-
-        }
-            if(fullHouse==15)
-            {
-                AlertDialog.Builder alert = new AlertDialog.Builder(this);
-                alert.setTitle("You got full house!");
-                //cancelable help to remove alert box by clicking outside the alert box. By seting it to false we r nt allowing to disable alert
-//                alert.setMessage("You got full house");
-                alert.setPositiveButton("End Game", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        finish();
+            public void randomNumberCreation() {
+                ArrayList<Integer> list = new ArrayList<Integer>();
+                for (int i = 0; i <= 99; i++) {
+                    list.add(new Integer(i));
+                }
+                Collections.shuffle(list);
+                Random val = new Random();
+                int m = 0, random;
+                for (int k = 0; k < 19; k += 9) {
+                    int a[] = {1, 1, 1, 1, 1, 1, 1, 1, 1};
+                    for (int i = 1; i <= 5; i++) {
+                        do {
+                            random = val.nextInt(9) + k; // [0, 8] + k => [k,k+[9]]
+                        } while (a[random - k] == 0);
+                        Log.i("Message", String.valueOf(random));
+                        buttons[random].setText(String.valueOf(list.get(m++)));
+                        a[random - k] = 0;
                     }
-                });
-                alert.show();
+                }
+                for (int i = 0; i < 10; i++) {
+                    System.out.println(list.get(i));
+                }
             }
 
+            @Override
+            public void onClick(View view) {
+
+                Button btn = (Button) view;
+                if ((btn.getText() != "") && (btn.getCurrentTextColor() != getResources().getColor(R.color.colorFalseButton))) {
+                    fullHouse++;
+                }
+                if (btn.getCurrentTextColor() == getResources().getColor(R.color.colorFalseButton)) {
+                    fullHouse--;
+                    btn.setTextColor(getResources().getColor(R.color.colorTrueButton));
+                    btn.setPaintFlags(Paint.DEV_KERN_TEXT_FLAG);
+                } else {
+                    btn.setTextColor(getResources().getColor(R.color.colorFalseButton));
+                    btn.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+
+                }
+                if (fullHouse == 15) {
+                    AlertDialog.Builder alert = new AlertDialog.Builder(this);
+                    alert.setTitle("You got full house!");
+                    //cancelable help to remove alert box by clicking outside the alert box. By seting it to false we r nt allowing to disable alert
+//                alert.setMessage("You got full house");
+                    alert.setPositiveButton("End Game", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            finish();
+                        }
+                    });
+                    alert.show();
+                }
+
+            }
+
+    public Bitmap takeScreenshot() {
+        View rootView = getWindow().getDecorView().getRootView();
+        rootView.setDrawingCacheEnabled(true);
+        rootView.buildDrawingCache(true);
+        Bitmap b=Bitmap.createBitmap(rootView.getDrawingCache());
+        rootView.setDrawingCacheEnabled(false);
+        return b;
+    }
+    File imagePath;
+    public void saveBitmap(Bitmap bitmap) {
+        imagePath = new File(Environment.getExternalStorageDirectory() +"/documents/"+ Calendar.getInstance().getTime().toString()+".jpg");
+        FileOutputStream fos=null;
+        try {
+            fos = new FileOutputStream(imagePath);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+            fos.flush();
+            fos.close();
+        } catch (Exception e) {
+            e.printStackTrace();}
+    }
+    private void shareIt() {
+         Uri uri = Uri.fromFile(imagePath);
+        Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+        sharingIntent.setPackage("com.whatsapp");
+        sharingIntent.setType("image/jpeg");
+        String shareBody = "See my ticket in tambola";
+        sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
+        sharingIntent.putExtra(Intent.EXTRA_STREAM, uri);
+        sharingIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        try {
+            startActivity(sharingIntent);
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast toast=Toast. makeText(getApplicationContext(),"WhatsApp is not installed",Toast. LENGTH_SHORT);;
         }
+    }
+
 }
 
 

@@ -476,6 +476,17 @@
         app:layout_constraintLeft_toRightOf="@+id/btn3_eight"
         app:layout_constraintTop_toBottomOf="@+id/btn2_nine" />
 
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/share"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btn_nine"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -496,7 +507,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent="0.22" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/horizontl2"
